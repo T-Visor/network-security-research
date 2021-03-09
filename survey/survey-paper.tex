@@ -11,7 +11,6 @@
 \begin{document}
 
 \title{Machine Learning Security Survey\\
-\thanks{Identify applicable funding agency here. If none, delete this.}
 }
 
 \author{\IEEEauthorblockN{Turhan Kimbrough}
@@ -25,7 +24,13 @@ tkimbr1@students.towson.edu}
 
 \begin{abstract}
 Machine learning has experienced a significant growth in usage 
-over the past few years. 
+over the past few decades. Due to its data-centric approach in modeling, 
+machine learning has made use in a variety of subfields in Computer Science. In
+particular, researchers have been interested in incorporating machine learning
+into the domain of cybersecurity, utilizing it from the perspective of an
+adversary or ally. This survey paper provides a comprehensive overview of
+the state of machine learning, its application in various aspects of
+cybersecurity, and future research directions being explored.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -33,8 +38,22 @@ Neural network, training, data, deep learning
 \end{IEEEkeywords}
 
 \section{Introduction}
-This document is a model and instructions for \LaTeX.
-Please observe the conference page limits. 
+In this section, we will introduce some of the basic concepts of machine
+learning, and why its approach differs from traditional programming models.
+Traditionally, when software developers are tasked with solving a problem, they
+use a collection of algorithms \& data structures to find a solution. The basic
+routine consists of finding appropriate input values,
+creating the logic (or rules) to process the input, and producing the appropriate output.
+The traditional approach to software development allows for fine-tuned control
+of the logic to achieve the solution. However, this approach does not scale
+with the complexity of additional rules and/or possible solutions. An
+example is image classification, where the logic needed to compare images is
+very complex. This becomes a bigger concern when new classifications need to be
+derived with new image data. Machine learning flips the traditional programming
+paradigm on its head, by taking a series of labeled solutions as input, and
+letting the machine develop the rules by detecting patterns in the solutions.
+This approach relies on large sets of well-defined data, but has the
+flexibility in being used in many different applications.
 
 \section{Ease of Use}
 
