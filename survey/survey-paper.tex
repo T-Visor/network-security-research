@@ -41,17 +41,30 @@ Neural networks, security, classification
 \section{Introduction}
 With the increasing widespread adoption of machine learning technology, its
 usage is being observed in a variety of different fields. Some notable examples
-include image recognition, voice assistants, email spam filters, and search
-engines. Machine learning is also a key component for future innovative
-technologies such as artificial intelligence in robotics and self-driving
-cars.
+include image recognition, voice assistant technologies, email spam filters, and search
+engines. Much of its recent popularity can be attributed to the availability of
+frameworks such as tensorflow, allowing people of almost any background to
+quickly draft a machine learning application.
+\newline
+
+However, one growing concern tied to the ubiquity of machine learning is its 
+accessibility to adversaries. Based on the assessment of current and prior
+research, there are a number of vulnerabilities in current machine learning
+models which can be exploited with little knowledge of a system's domain. In
+addition, attackers have been able to leverage machine learning technology to
+assist the deployment of cyberattacks. Enterprise machine learning applications
+may often contain large datasets of important information, becoming a potential 
+candidate of a targeted attack. This paper will survey the domain of
+cybersecurity with regard to machine learning. This topic will explore the
+fundamentals of machine learning, current vulnerabilities in machine learning
+systems, machine learning technology from the perspective of adversaries, and
+future research directions.
 
 \section{Overview}
+This section will introduce the fundamentals of machine learning. Additionally,
+there will be a discussion about the key terms used by members of the community.
 
 \subsection{Machine Learning Basics}
-
-In this section, we will introduce some of the basic concepts of machine
-learning, and why its approach differs from traditional programming models.
 Traditionally, when software developers are tasked with solving a problem, they
 use a collection of algorithms \& data structures to find a solution. The basic
 routine consists of finding appropriate input values,
@@ -59,13 +72,21 @@ creating the logic (or rules) to process the input, and producing the appropriat
 The traditional approach to software development allows for fine-tuned control
 of the logic to achieve the solution. However, this approach does not scale
 with the complexity of additional rules and/or possible solutions. An
-example is image classification, where the logic needed to compare images is
-very complex. This becomes a bigger concern when new classifications need to be
+example is image classification, where the logic needed to compare images
+is complex. This becomes a bigger concern when new classifications need to be
 derived with new image data. Machine learning flips the traditional programming
-paradigm on its head, by taking a series of labeled solutions as input, and
+paradigm on its head, by taking a series of solutions as input, and
 letting the machine develop the rules by detecting patterns in the solutions.
-The result is a neural network, the mathematical model capable of making
+The result is a \emph{neural network}, the mathematical model capable of making
 decisions on newly supplied data. This approach relies on large sets of well-defined data, but has the flexibility in being used in many different applications.
+
+Briefly mentioned earlier, a common use case for machine learning is
+\emph{classification}, where a dataset is categorized into different groups to
+make observations and/or predictions of future data. There are several types of
+classifications, including \emph{binary classification}, \emph{multi-class
+classification}, \& \emph{multi-label classification}.
+
+
 
 \section{Prepare Your Paper Before Styling}
 Before you begin to format your paper, first write and save the content as a 
