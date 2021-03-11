@@ -66,11 +66,11 @@ there will be a discussion about the key terms used by members of the community.
 
 \subsection{Machine Learning Basics}
 Traditionally, when software developers are tasked with solving a problem, they
-use a collection of algorithms \& data structures to find a solution. The basic
+use a combination of rules and logic to find a solution. The basic
 routine consists of finding appropriate input values,
-creating the logic (or rules) to process the input, and producing the appropriate output.
+creating the logic and rules to process the input, and producing the appropriate output.
 The traditional approach to software development allows for fine-tuned control
-of the logic to achieve the solution. However, this approach does not scale
+of program behavior to achieve the solution. However, this approach does not scale
 with the complexity of additional rules and/or possible solutions. An
 example is image classification, where the logic needed to compare images
 is complex. This becomes a bigger concern when new classifications need to be
@@ -78,7 +78,8 @@ derived with new image data. Machine learning flips the traditional programming
 paradigm on its head, by taking a series of solutions as input, and
 letting the machine develop the rules by detecting patterns in the solutions.
 The result is a \emph{neural network}, the mathematical model capable of making
-decisions on newly supplied data. This approach relies on large sets of well-defined data, but has the flexibility in being used in many different applications.
+decisions on newly supplied data. This approach relies on large sets of
+well-defined data, and has the flexibility for being used in many different applications.
 
 Briefly mentioned earlier, a common use case for machine learning is
 \emph{classification}, where a dataset is categorized into different groups
@@ -92,9 +93,15 @@ categorizes data into different groups, where each data instance is assigned
 according to its feature. \emph{Multi-label classification} categorizes data
 into different groups, where each data instance is assigned according to its
 expression of on or more features.
-\newline
 
-TODO: Talk about supervised vs. unsupervised training \& validation
+\emph{Training} is the process of teaching a machine learning model to detect patterns
+in datasets. There are two types of training mechanisms, \emph{supervised
+training} and \emph{unsupervised training}. \emph{Supervised training} requires
+each data instance to have one or more labels, defining which category or
+feature it expresses. In contrast, \emph{unsupervised training} omits the need
+for labels, and the machine learning model will categorize datasets on its own.
+
+TODO: Talk about validation
 
 \section{Prepare Your Paper Before Styling}
 Before you begin to format your paper, first write and save the content as a 
