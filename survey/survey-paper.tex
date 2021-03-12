@@ -135,7 +135,7 @@ would want to minimize any evidence of the data being tampered with.
 Often, the goal of this
 attack is to make a machine learning model incorrectly classify data. The
 consequences of this attack can be devastating. Examples include tricking an
-autonomous vehicle to misinterpret traffic signs, sneak malicious data past an
+autonomous vehicle to misinterpret traffic signs, sneaking malicious data past an
 intrusion detection system, or bypassing email spam filters.
 
 \subsection{Membership Inference}
@@ -156,9 +156,19 @@ Often, this can exploit the confidentiality of information on a system. An
 attacker has the capability to correlate information between datasets to target
 individuals for other cyberattacks.
 
-\subsection{TODO: one more section}
+\subsection{Transfer Learning}
+Transfer learning is a mechanism where an adversary has the ability to study a
+publicly available machine learning model, and use that insight to sneak past
+and/or corrupt similar target systems. This type of attack is classified as a
+\emph{white box attack}, since the attacker would need to have full access to
+at least one machine learning model.
 
-\subsection{TODO: talk about mitigations for each}
+This particular vulnerability requires the attacker to have knowledge of the
+input data, learning mechanism of the machine learning model, and
+classification behavior for its outputs.
+
+\subsection{TODO: talk about mitigations for each. Mention encryption,
+probability over discrete decision making, and auditing.}
 
 Please use ``soft'' (e.g., \verb|\eqref{Eq}|) cross references instead
 of ``hard'' references (e.g., \verb|(1)|). That will make it possible
