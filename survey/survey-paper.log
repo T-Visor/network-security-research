@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.5)  12 MAR 2021 14:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.5)  19 MAR 2021 13:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -278,20 +278,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--49
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 181.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 181
+] [2]
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 214.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 214
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 181
+LaTeX Font Info:    Trying to load font information for U+msb on input line 214
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2]
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -317,7 +317,7 @@ usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/
 times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
 /share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on survey-paper.pdf (3 pages, 70177 bytes).
+Output written on survey-paper.pdf (3 pages, 71137 bytes).
 PDF statistics:
  35 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream

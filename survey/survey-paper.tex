@@ -107,10 +107,10 @@ preventing a phenomenon called \emph{over-fitting}, where a model will only
 'memorize' characteristics or patterns of training data.
 
 \section{Vulnerabilities in Machine Learning Models}
-Since machine learning models are constructed based on the data,
-the largest attack surface would be the training data itself. For an attacker
-to manipulate a machine learning model, they would only need access to its
-input mechanism. 
+Due to the unique mechanism for constructing machine learning models, there are
+several ways which they can be exploited by an attacker. As a result, the
+attack surface which exists on machine learning models will differ from
+traditional software systems.
 This section will discuss several vulnerabilities which are currently present
 in machine learning.
 
@@ -176,10 +176,35 @@ a target machine learning model.
 
 \section{Mitigations To Vulnerabilities}
 
-The preferred spelling of the word ``acknowledgment'' in America is without 
-an ``e'' after the ``g''. Avoid the stilted expression ``one of us (R. B. 
-G.) thanks $\ldots$''. Instead, try ``R. B. G. thanks$\ldots$''. Put sponsor 
-acknowledgments in the unnumbered footnote on the first page.
+Due to the large attack surface found in machine learning models, there has
+been a significant focus in its security. This section will
+discuss several mitigations to the vulnerabilities discussed in the previous
+section.
+
+\subsection{Selecting Trusted Datasets}
+To secure a machine learning system, it is important to start at the beginning
+of the machine learning lifecycle, securing the input data itself. Since
+the training phase typically requires a large amount of data,
+many projects utilize publicly available datasets. Publicly available datasets
+are similar to open source projects, in that contributions are made by and
+verified by a community of individuals. This means that the trust is placed on
+the community to provide legitimate information. To find trusted datasets, one
+can check the policy of verifying contributions, number of community
+members/maintainers, and entities backing the project. For example, datasets
+from the Government, Universities, and repositories such as kaggle are
+typically trustworthy.
+
+If a dataset is chosen from a location with an unknown reputation, it is
+recommended to perform an audit to ensure the data consists of relevant
+samples, proper labels, and a balanced set of classes.
+
+\subsection{Sanitizing input}
+
+\subsection{Machine Learning Retraining}
+
+\subsection{Differential Privacy}
+
+
 
 \section*{References}
 
