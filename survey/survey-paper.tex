@@ -218,12 +218,26 @@ differentiate between normal and malicious samples. Once a malicious sample is
 detected, it is automatically discarded from the model.
 
 \subsection{Machine Learning Retraining}
+After a machine learning model is finished with its initial training and
+verification, it is typically ready to be deployed. After deployment, a good
+practice to maintain a machine learning model is to periodically retrain it.
+Retraining can either use the original dataset or a new dataset containing
+similar information as the original. This is ideal for machine learning models
+which continuously learn post-deployment.
+
+A specialized approach to retraining with samples of malicious data is a technique called
+\emph{adversarial retraining}. This process however, can be time-consuming due
+to the need for a reasonable sample size with perturbations. The technique
+involves labelling malicious data with perturbations as adversarial samples, and training
+the model to detect them. This ensures that adversarial samples will not affect
+the overall accuracy of the model, by learning to filter perturbations added to
+any new data.
+
+
 
 \subsection{Generative Adversarial Networks}
 
 \subsection{Differential Privacy}
-
-
 
 \section*{References}
 
