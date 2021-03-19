@@ -198,9 +198,28 @@ If a dataset is chosen from a location with an unknown reputation, it is
 recommended to perform an audit to ensure the data consists of relevant
 samples, proper labels, and a balanced set of classes.
 
-\subsection{Sanitizing input}
+\subsection{Sanitizing Input}
+The next step in securing a machine learning system is to use mechanisms which
+filter malicious samples from clean samples during the training phase. There
+are several different approaches to sanitizing depending on the type of data
+being fed to the model. A general procedure for sanitizing input data is still
+an open research topic.
+
+One naive approach for filtering data is the use of \emph{gradient masking}.
+This simple technique will manipulate each input sample to create a sharper
+decision boundary for the machine learning model to work on. A common
+implementation of this technique for images is \emph{binary thresholding},
+where each pixel in an image is converted to black or white depending on its
+color value. This technique will mitigate against perturbations to data.
+
+Another approach called ANTIDOTE, proposed by Rubinstein \emph{et al}, uses an \emph{anomaly-based}
+detection scheme to characterize data samples. ANTIDOTE uses statistics to
+differentiate between normal and malicious samples. Once a malicious sample is
+detected, it is automatically discarded from the model.
 
 \subsection{Machine Learning Retraining}
+
+\subsection{Generative Adversarial Networks}
 
 \subsection{Differential Privacy}
 

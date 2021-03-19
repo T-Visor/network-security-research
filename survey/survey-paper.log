@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.5)  19 MAR 2021 13:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.5)  19 MAR 2021 13:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -279,14 +279,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--49
 
 
 ] [2]
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 214.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 214
-.
+Underfull \hbox (badness 1571) in paragraph at lines 215--219
+\OT1/ptm/m/n/11 Ru-bin-stein \OT1/ptm/m/it/11 et al\OT1/ptm/m/n/11 , uses an \O
+T1/ptm/m/it/11 anomaly-based \OT1/ptm/m/n/11 de-tec-tion
+ []
 
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 233.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 233
+.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 214
+LaTeX Font Info:    Trying to load font information for U+msb on input line 233
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -317,7 +321,7 @@ usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/
 times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
 /share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on survey-paper.pdf (3 pages, 71137 bytes).
+Output written on survey-paper.pdf (3 pages, 72601 bytes).
 PDF statistics:
  35 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream
