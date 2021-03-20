@@ -221,23 +221,39 @@ detected, it is automatically discarded from the model.
 After a machine learning model is finished with its initial training and
 verification, it is typically ready to be deployed. After deployment, a good
 practice to maintain a machine learning model is to periodically retrain it.
-Retraining can either use the original dataset or a new dataset containing
+Retraining can either use the original dataset, or a new dataset containing
 similar information as the original. This is ideal for machine learning models
 which continuously learn post-deployment.
 
-A specialized approach to retraining with samples of malicious data is a technique called
-\emph{adversarial retraining}. This process however, can be time-consuming due
-to the need for a reasonable sample size with perturbations. The technique
+A specialized approach to retraining using samples of malicious data is a technique called
+\emph{adversarial retraining}. This process requires  
+a sufficient number of malicious samples with perturbations, along with the
+original training data. The technique
 involves labelling malicious data with perturbations as adversarial samples, and training
-the model to detect them. This ensures that adversarial samples will not affect
+the model to detect them appropriately. This ensures that adversarial samples will not affect
 the overall accuracy of the model, by learning to filter perturbations added to
-any new data.
-
-
-
-\subsection{Generative Adversarial Networks}
+any new data. The model will learn to differentiate between legitimate and
+adversarial data when re-deployed.
 
 \subsection{Differential Privacy}
+During deployment, data will typically be flowing in and out of a machine
+learning model. Information coming in and out of a machine learning model may be sensitive, so
+systems will typically incorporate APIs to interface with it. Even if a system
+is robust, a data leak will completely compromise confidentiality. To
+circumvent this issue, \emph{differential privacy} is a mechanism to
+effectively store
+information while hiding confidential details.
+
+The implementation of differential privacy will differ depending on the data
+being processed. A standard mechanism for differential privacy is to present
+output data showing non-sensitive information normally, while sensitive
+information is encrypted. Another mechanism is presenting the output
+information of a machine learning model as a reference to another dataset, which
+will then need to be queried with subsequent processing.
+
+\section{Future Work}
+
+\subsection{Trusted platforms}
 
 \section*{References}
 
