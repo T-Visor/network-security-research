@@ -1,4 +1,6 @@
 # machine learning key terms
 https://www.edureka.co/blog/classification-in-machine-learning/
 
+Add a section for current cybersecurity work using ML: spam filters, IDPS,
+anti-virus systems, CAPTCHAs
 Paper must be 5 pages!
