@@ -35,7 +35,8 @@ cybersecurity, securing machine learning systems, and future research directions
 \end{abstract}
 
 \begin{IEEEkeywords}
-Neural networks, security, classification
+Neural networks, security, classification, machine learning model, training,
+    validation
 \end{IEEEkeywords}
 
 \section{Introduction}
@@ -293,12 +294,14 @@ of machine learning along with insights on the relationships between data
 samples.
 
 An interesting research direction would be to use Generative Adversarial
-Networks to aid in the detection of malicious data. In order to do this, a
+Networks to aid in model retraining. In order to do this, a
 variety of malicious data samples would need to first be aggregated. Then the
 \emph{generator} and \emph{discriminator} pair would work to create a model
 which can realistically create new malicious data samples. This new (malicious)
-model can then be used to generate labeled malicious data to help retrain a deployed
-machine learning model.
+model can then be used to generate labeled malicious data, which will be fed to
+machine learning model which needs to undergo retraining. The machine learning
+model which is being retrained will have a more reliable malicious dataset,
+which can strengthen its detection mechanism.
 
 
 
