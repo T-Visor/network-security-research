@@ -179,7 +179,12 @@ a target machine learning model.
 Due to the large attack surface found in machine learning models, there has
 been a significant focus in its security. This section will
 discuss several mitigations to the vulnerabilities discussed in the previous
-section.
+section. 
+
+This section will also reference a generic process known as the \emph{machine
+learning lifecycle}. This lifecycle consists of building the dataset, feeding
+the input to the model, training the model, verifying the model accuracy,
+deployment, and maintenance.
 
 \subsection{Selecting Trusted Datasets}
 To secure a machine learning system, it is important to start at the beginning
@@ -252,11 +257,28 @@ information of a machine learning model as a reference to another dataset, which
 will then need to be queried with subsequent processing.
 
 \section{Future Work}
+Much of the research which has been conducted in the field of machine learning
+security has been relatively new. As a result, the research community still has
+many questions as to what components are necessary and/or feasible for securing
+future machine learning systems.
+This section will outline potential directions for future research based on
+what has been reviewed in prior sections.
 
 \subsection{Trusted platforms}
+Currently, the usage of \emph{Trusted Platform Modules} (TPMs) are seeing a
+rise in popularity for securing systems. TPM technology typically consists of a
+set of cryptographic algorithms along with a dedicated processor known as a TPM
+chip. The purpose of a TPM chip is to provide a dedicated hardware device to
+independently verify that a software system has not been tampered with. 
+
+An interesting research direction would be to incorporate TPMs into a machine
+learning system. In addition, there has been a recent surge in mobile devices
+which ship with dedicated machine learning processing units, such as Apple
+MacBooks powered by M1 processors and Samsung Galaxy S-series flagship devices.
+It would not be surprising if researchers would be interested in using a TPM
+and machine learning processing unit as building blocks for a trusted platform.
 
 \section*{References}
-
 Please number citations consecutively within brackets \cite{b1}. The 
 sentence punctuation follows the bracket \cite{b2}. Refer simply to the reference 
 number, as in \cite{b3}---do not use ``Ref. \cite{b3}'' or ``reference \cite{b3}'' except at 
