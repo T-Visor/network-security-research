@@ -278,6 +278,30 @@ MacBooks powered by M1 processors and Samsung Galaxy S-series flagship devices.
 It would not be surprising if researchers would be interested in using a TPM
 and machine learning processing unit as building blocks for a trusted platform.
 
+\subsection{Generative Adversarial Networks}
+The concept of Generative Adversarial Networks is still a relatively
+new, being discovered only within the last decade. Generative Adversarial
+Networks consist of two separate neural networks, a \emph{generator}
+and \emph{discriminator}. Given an initial training data set, the goal is to
+produce new data which mimic the characteristics of the training set. This is
+accomplished by using the \emph{generator} to produce realistic fake data from
+a random seed, and the \emph{discriminator} which learns to differentiate the
+fake data and real data. The two networks are in an adversarial relationship,
+hence the name, and work toward minimizing the differences between the fake and
+real data. This concept has brought significant insight into the inner-workings
+of machine learning along with insights on the relationships between data
+samples.
+
+An interesting research direction would be to use Generative Adversarial
+Networks to aid in the detection of malicious data. In order to do this, a
+variety of malicious data samples would need to first be aggregated. Then the
+\emph{generator} and \emph{discriminator} pair would work to create a model
+which can realistically create new malicious data samples. This new (malicious)
+model can then be used to generate labeled malicious data to help retrain a deployed
+machine learning model.
+
+
+
 \section*{References}
 Please number citations consecutively within brackets \cite{b1}. The 
 sentence punctuation follows the bracket \cite{b2}. Refer simply to the reference 
