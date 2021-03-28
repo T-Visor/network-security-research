@@ -179,7 +179,7 @@ Often, the goal of this attack is similar to the other two mentioned above. An
 attacker would use the information to trick, fool, manipulate, or sneak passed
 a target machine learning model.
 
-\section{Mitigations To Vulnerabilities}
+\section{Mitigations to Vulnerabilities}
 
 Due to the large attack surface found in machine learning models, there has
 been a significant focus in its security. This section will
@@ -261,14 +261,46 @@ information is encrypted. Another mechanism is presenting the output
 information of a machine learning model as a reference to another dataset, which
 will then need to be queried with subsequent processing.
 
-\section{Assisting Cyberattacks With Machine Learning}
+\section{Assisting Cyberattacks with Machine Learning}
 After discussing the vulnerabilities/mitigations for machine learning systems
 from the perspective of the defender, this section will discuss how machine
 learning technology is used to assist with the deployment of cyberattacks from
 the perspective of the attacker.
 
 \subsection{Evasive Malware}
+Modern-day malware detection schemes use several different techniques to
+classify malicious and safe programs. One method is the use of detection
+engines, which are often available in two distinct types,
+\emph{signature-based} detection engines and \emph{anomaly-based} detection
+engines. A signature-based detection engine keeps a record of malicious
+behaviors and footprints, comparing software behaviors against the record to
+identify malware. On the other hand, an anomaly-based engine will
+compare software behaviors against a record of 'normal' system behavior to
+detect deviations, classifying them as malicious actions. Both approaches can be extended with machine learning
+capabilities to improve their detection rates. In particular, supervised
+learning has been shown to be an effective strategy.
 
+However, even with the advancements in malware detection schemes, research
+has shown that there can be a significant flaw associated with detection
+engines using static features and definitive labels. In particular, a framework
+named \emph{DQEAF} has demonstrated the ability to evade malware-detection by
+the use of reinforcement learning. DQEAF operates by using a machine
+learning agent to interact with different malware samples. During its
+interaction, it will slightly modify the behaviors of detected malware samples
+without impacting its overall structure and/or functionality. The agent will
+continuously modify detected malware samples until it is able to be completely
+undetected by a malware detection engine.
+
+\subsection{CAPTCHA Bypass}
+CAPTCHA is an acronym which stands for the "Completely Automated Public Turing test
+to tell Computers and Humans Apart". CAPTCHAs are a 
+mechanism to combat against the growing number bots which are used on the
+internet, ideally providing a challenge which is relatively easy for humans to
+solve, but difficult for machines. CAPTCHAs come in a variety of types,
+which includes the deciphering of obfuscated text, interpreting audio messages,
+selecting images, and/or tracking of end-user behavior.
+
+\subsection{Brute Forcing Passwords}
 
 \section{Future Work}
 Much of the research which has been conducted in the field of machine learning
@@ -278,7 +310,7 @@ future machine learning systems.
 This section will outline potential directions for future research based on
 what has been reviewed in prior sections.
 
-\subsection{Trusted platforms}
+\subsection{Trusted Platforms}
 Currently, the usage of \emph{Trusted Platform Modules} (TPMs) are seeing a
 rise in popularity for securing systems. TPM technology typically consists of a
 set of cryptographic algorithms along with a dedicated processor known as a TPM
@@ -316,27 +348,8 @@ machine learning model which needs to undergo retraining. The machine learning
 model which is being retrained will have a more reliable malicious dataset,
 which can strengthen its detection mechanism.
 
+\subsection{Reinforcement Learning Framework for Anti-malware Engines}
 
-
-\section*{References}
-Please number citations consecutively within brackets \cite{b1}. The 
-sentence punctuation follows the bracket \cite{b2}. Refer simply to the reference 
-number, as in \cite{b3}---do not use ``Ref. \cite{b3}'' or ``reference \cite{b3}'' except at 
-the beginning of a sentence: ``Reference \cite{b3} was the first $\ldots$''
-
-Number footnotes separately in superscripts. Place the actual footnote at 
-the bottom of the column in which it was cited. Do not put footnotes in the 
-abstract or reference list. Use letters for table footnotes.
-
-Unless there are six authors or more give all authors' names; do not use 
-``et al.''. Papers that have not been published, even if they have been 
-submitted for publication, should be cited as ``unpublished'' \cite{b4}. Papers 
-that have been accepted for publication should be cited as ``in press'' \cite{b5}. 
-Capitalize only the first word in a paper title, except for proper nouns and 
-element symbols.
-
-For papers published in translation journals, please give the English 
-citation first, followed by the original foreign-language citation \cite{b6}.
 
 \begin{thebibliography}{00}
 \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
