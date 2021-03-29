@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.5)  29 MAR 2021 18:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.5)  29 MAR 2021 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -272,6 +272,24 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 
+LaTeX Warning: File `fig1.png' not found on input line 51.
+
+
+! Package pdftex.def Error: File `fig1.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51     \centerline{\includegraphics{fig1.png}}
+                                                
+? 
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 5
+1.
+(/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
 
@@ -285,24 +303,24 @@ Before submitting the final camera ready copy, remember to:
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-
 ] (./term-paper.aux) ) 
 Here is how much of TeX's memory you used:
- 3676 strings out of 479383
- 53003 string characters out of 5875831
- 336265 words of memory out of 5000000
- 20789 multiletter control sequences out of 15000+600000
- 431768 words of font info for 72 fonts, out of 8000000 for 9000
+ 3742 strings out of 479383
+ 53744 string characters out of 5875831
+ 339273 words of memory out of 5000000
+ 20836 multiletter control sequences out of 15000+600000
+ 432283 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,8n,72p,324b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,8n,72p,324b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/
-share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/
-type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a
-.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on term-paper.pdf (1 page, 40237 bytes).
+share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/font
+s/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi
+8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texm
+f-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on term-paper.pdf (1 page, 59524 bytes).
 PDF statistics:
- 25 PDF objects out of 1000 (max. 8388607)
- 17 compressed objects within 1 object stream
+ 29 PDF objects out of 1000 (max. 8388607)
+ 20 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
