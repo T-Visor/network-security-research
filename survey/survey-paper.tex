@@ -327,10 +327,15 @@ combination of characters to guess the resulting password.
 
 Due to the increasing awareness in cybersecurity best practices, many sites
 with accounts will employ mechanisms to enforce stronger passwords. As a
-result, simple password crackers are no longer able to retrieve passwords
-within a reasonable amount of time. However, research has suggested that by
-using a simple supervised training mechanism, a password cracker can become
-much more effective.
+result, simple password crackers are no longer able to make guesses 
+within a reasonable amount of time. However, research suggests that a
+generative machine learning model is capable of creating more accurate guesses
+based on previously exposed password datasets. The approach uses the
+\emph{Markov Model} with a neural network to derive characteristics from a
+password dataset, and generate new passwords with the same characteristics.
+Comparing the generated passwords against a separate leaked dataset, the
+researchers were able to match up to 42\% of the passwords using the generative
+machine learning model.
 
 \section{Future Work}
 Much of the research which has been conducted in the field of machine learning
