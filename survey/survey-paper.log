@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.5)  28 MAR 2021 23:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.5)  28 MAR 2021 23:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -279,7 +279,7 @@ Underfull \hbox (badness 1571) in paragraph at lines 225--229
 T1/ptm/m/it/11 anomaly-based \OT1/ptm/m/n/11 de-tec-tion
  []
 
-[3] [4]
+[3] [4] [5]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -291,7 +291,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5] [6
+[6
 
 ] (./survey-paper.aux) ) 
 Here is how much of TeX's memory you used:
@@ -306,7 +306,7 @@ Here is how much of TeX's memory you used:
 r/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/font
 s/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on survey-paper.pdf (6 pages, 75572 bytes).
+Output written on survey-paper.pdf (6 pages, 76093 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
