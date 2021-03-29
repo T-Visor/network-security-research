@@ -302,12 +302,18 @@ selecting images based on descriptions, and the tracking of end-user behavior.
 
 Over the past few years, CAPTCHAs have grown to be more difficult due to the
 techniques used by adversaries. The techniques include the exploitation of
-cheap human labor, exploiting weaknesses in the CAPTCHA generating mechanism,
-and using machine learning in automating CAPTCHA solving. Machine learning
+weaknesses in the CAPTCHA generating mechanism
+and using machine learning for CAPTCHA solving. Machine learning
 CAPTCHA solving is an especially attractive option, given the automation
 capabilities. In fact, research has suggested that reinforcement learning has
 provided the capability to solve one of Google's reCAPTCHA mechanisms, which
-records mouse movements to distinguish human and bot behavior.
+records mouse movements to distinguish human and bot behavior. This was
+achievable by representing the pixels on a screen as a matrix, and using a
+software agent to move the
+cursor across the screen. The \emph{Markov
+Decision Process} is the algorithm which was used to generate random movements,
+and trains the software agent to behave more human-like over time. This
+process solved reCAPTCHAs with greater than 90\% accuracy.
 
 \subsection{Brute Forcing Passwords}
 
