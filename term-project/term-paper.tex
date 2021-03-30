@@ -10,7 +10,7 @@
 T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Using Supervised Learning to Solve Text-Based CAPTCHAs\\
+\title{Using Supervised Learning To Solve Text-Based CAPTCHAs\\
 }
 
 \author{\IEEEauthorblockN{Turhan Kimbrough}
@@ -41,17 +41,37 @@ tkimbr1@students.towson.edu}
 \end{IEEEkeywords}
 
 \section{Introduction}
+CAPTCHA is an acronym for the "\textbf{C}ompletely \textbf{A}utomated
+\textbf{P}ublic \textbf{T}uring test to tell
+\textbf{C}omputers and \textbf{H}umans \textbf{A}part", which is a
+challenge-response test used in computing services to verify that the user is a
+human. The premise of a CAPTCHA is to provide a test which is relatively easy
+for a human to solve, but difficult for bots. This is one of many 
+mechanisms used to combat against the growing usage of malicious software
+automation. Due to the ubiquity of automation software, cybercriminals have
+been able to easily create bots to perform malicious acts. These acts include
+denial-of-service attacks, autonomous social media communication agents,
+scalping scarce merchandise, and more.
 
+Due to the wide availability of CAPTCHA-generating software, they have become a popular
+mechanism to integrate into websites. In particular, text-based CAPTCHAs are
+often available as a low-cost and simple solution. Text-based CAPTCHAs
+typically consist of alphanumeric characters in an image, which has been
+manipulated to prevent it from being easily parsed by a machine. 
 
+\begin{figure}[htbp]
+    \centerline{\includegraphics{CAPTCHA.png}}
+    \centerline{\includegraphics{PROMPT.png}}
+    \caption{Example of a text-based CAPTCHA.}
+    \label{figure}
+\end{figure}
+
+While this mechanism can mitigate the majority of software bots, it is not
+effective against a trained machine learning agent.
 \section{Overview}
 
 \section{Conclusion}
 
-\begin{figure}[htbp]
-    \centerline{\includegraphics{fig1.png}}
-    \caption{Example of a figure caption.}
-    \label{fig}
-\end{figure}
 
 
 \begin{thebibliography}{00}
