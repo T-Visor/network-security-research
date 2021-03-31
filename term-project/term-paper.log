@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.29)  30 MAR 2021 15:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.29)  31 MAR 2021 11:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -289,6 +289,12 @@ Type  H <return>  for immediate help.
                                                   
 l.67 ...ine{\includegraphics{numeric-captcha.png}}
                                                   
+? \
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
 ? 
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 6
 7.
@@ -333,7 +339,7 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  3759 strings out of 479383
  54371 string characters out of 5875830
- 341273 words of memory out of 5000000
+ 340273 words of memory out of 5000000
  20851 multiletter control sequences out of 15000+600000
  433390 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -343,7 +349,7 @@ share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi
 8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on term-paper.pdf (2 pages, 63642 bytes).
+Output written on term-paper.pdf (2 pages, 63651 bytes).
 PDF statistics:
  32 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream
