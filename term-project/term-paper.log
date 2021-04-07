@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.5)  7 APR 2021 13:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.5)  7 APR 2021 15:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -232,7 +232,11 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count270
 \l__pdf_internal_box=\box51
 )
-(./term-paper.aux)
+(./term-paper.aux
+
+LaTeX Warning: Label `figure' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
@@ -313,6 +317,33 @@ l.68 ...includegraphics{alphanumeric-captcha.png}}
 
 
 ]
+Underfull \hbox (badness 1668) in paragraph at lines 104--111
+[]\OT1/ptm/m/n/11 Researchers at [] have pro-vided a ba-sic frame-
+ []
+
+
+Underfull \hbox (badness 2961) in paragraph at lines 104--111
+\OT1/ptm/m/n/11 char-ac-ter recog-ni-tion tech-niques. More specif-i-cally,
+ []
+
+
+LaTeX Warning: File `negative-kerning.png' not found on input line 126.
+
+
+! Package pdftex.def Error: File `negative-kerning.png' not found: using draft 
+setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 ...e{\includegraphics{negative-kerning.png}}
+                                                  
+? 
+
+Underfull \vbox (badness 2790) has occurred while \output is active []
+
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -324,23 +355,25 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2
+[2] (./term-paper.aux)
 
-] (./term-paper.aux) ) 
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3759 strings out of 479383
- 54371 string characters out of 5875831
- 341273 words of memory out of 5000000
- 20851 multiletter control sequences out of 15000+600000
+ 3775 strings out of 479383
+ 54749 string characters out of 5875831
+ 341312 words of memory out of 5000000
+ 20866 multiletter control sequences out of 15000+600000
  433390 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,8n,72p,324b,300s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/
-share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/font
-s/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi
-8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texm
-f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on term-paper.pdf (2 pages, 67229 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
+ts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/ut
+mb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/t
+exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/u
+rw/times/utmri8a.pfb>
+Output written on term-paper.pdf (2 pages, 69839 bytes).
 PDF statistics:
  32 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream

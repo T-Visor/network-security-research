@@ -10,7 +10,7 @@
 T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Using Machine Learning To Solve Text-Based CAPTCHAs\\
+\title{Using Machine Learning To Solve Text-based CAPTCHAs\\
 }
 
 \author{\IEEEauthorblockN{Turhan Kimbrough}
@@ -74,7 +74,7 @@ While this mechanism can mitigate the majority of software bots, it is not
 effective against bots utilizing machine learning technology. This research
 paper demonstrates that a machine learning agent is capable of solving CAPTCHAs
 with the use of an open-source framework, several
-libraries, and supervised learning. The goal of this research is to
+libraries, and convolutional neural networks. The goal of this research is to
 highlight the vulnerabilities which are present in simple CAPTCHA mechanisms.
 This paper will cover background/related work, the methodology  used for solving CAPTCHAs,
 challenges which were present, key contributions, results, and a section
@@ -100,6 +100,33 @@ learning to generate a series of movements which mimic the behavior of humans.
 This methodology was able to achieve a success rate of 97.4\% on a 100x100
 grid and 96.7\% on a 1000x1000 display.
 
+\subsection{Generic Solving of Text-based CAPTCHAs}
+Researchers at [] have provided a basic framework on solving CAPTCHAs using
+segmentation and character recognition techniques. More specifically, their
+technique is able to detect individual characters in CAPTCHAs with occluding
+lines. Traditional approaches to CAPTCHA-solving typically use two separate
+algorithms for segmentation and character recognition. The researchers have
+instead, developed an algorithm which combines the steps of segmentation and character
+recognition.
+
+The researchers approached this solution by studying previous schemes which
+were used to analyze characters in CAPTCHAs. Many of them were unable to
+segment CAPTCHAs which used \emph{negative kerning}, a technique
+where negative space is used between characters to ensure occlusion 
+by their neighbors. The algorithm developed by the researchers use machine
+learning to perform 3 steps: \emph{cut-point detection}, \emph{slicing}, and
+\emph{scoring}.
+Cut-point detection analyzes all combinations of character partitioning. The
+slicer will then segment each character using every partitioning combination,
+placing them on a graph afterwards. Finally, the scorer assigns a weight for
+each partitioning combination and determines which characters are most likely
+present in the CAPTCHA.
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics{negative-kerning.png}}
+    \caption{Example of negative kerning.}
+    \label{figure}
+\end{figure}
 
 \section{Methodology}
 
