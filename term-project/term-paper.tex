@@ -10,7 +10,7 @@
 T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Using Supervised Learning To Solve Text-Based CAPTCHAs\\
+\title{Using Machine Learning To Solve Text-Based CAPTCHAs\\
 }
 
 \author{\IEEEauthorblockN{Turhan Kimbrough}
@@ -30,7 +30,7 @@ tkimbr1@students.towson.edu}
     tracking mouse movement, and more. This research will focus on automating the
     process of deciphering text-based CAPTCHAs using machine learning
     techniques. Specifically, supervised learning is used to develop
-    neural networks capable of 100\% accuracy for certain datasets. The goal of
+    neural networks capable of over 99\% accuracy for certain datasets. The goal of
     this research is to demonstrate the weaknesses associated with text-based
     CAPTCHA mechanisms, especially with the prevalence of machine learning
     tools.
@@ -81,6 +81,25 @@ challenges which were present, key contributions, results, and a section
 covering future work.
 
 \section{Background/Related Work}
+In this section, there will be a brief review of similar work which has been
+done on using machine learning to solve CAPTCHA tests.
+
+\subsection{Solving reCAPTCHAs With Reinforcement Learning}
+Researchers at [] have demonstrated the ability to solve mouse-based reCAPTCHAs using
+reinforcement learning. Google's reCAPTCHA mechanism is more difficult to solve
+compared to traditional CAPTCHAs due to its usage of mouse-tracking to
+determine if the user is a human. While the exact algorithm is unknown due to
+the closed-source nature of the reCAPTCHA technology, the researchers uses a
+black-box approach to solve reCAPTCHAs.
+
+The approach models mouse movements as transitions on a 2-dimensional grid
+of pixels. The \emph{Markov Decision Process} is used to generate a series of
+movements (up, down, left, right), which is combination of random and controlled
+outcomes. The mouse-control agent is then trained through reinforcement
+learning to generate a series of movements which mimic the behavior of humans.
+This methodology was able to achieve a success rate of 97.4\% on a 100x100
+grid and 96.7\% on a 1000x1000 display.
+
 
 \section{Methodology}
 
