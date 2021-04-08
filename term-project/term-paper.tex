@@ -100,6 +100,12 @@ learning to generate a series of movements which mimic the behavior of humans.
 This methodology was able to achieve a success rate of 97.4\% on a 100x100
 grid and 96.7\% on a 1000x1000 display.
 
+\begin{figure}[htbp]
+    \centerline{\includegraphics{grid-world.png}}
+    \caption{Grid world model.}
+    \label{figure}
+\end{figure}
+
 \subsection{Generic Solving of Text-based CAPTCHAs}
 Researchers at [] have provided a basic framework on solving CAPTCHAs using
 segmentation and character recognition techniques. More specifically, their
@@ -125,6 +131,30 @@ present in the CAPTCHA.
 \begin{figure}[htbp]
     \centerline{\includegraphics{negative-kerning.png}}
     \caption{Example of negative kerning.}
+    \label{figure}
+\end{figure}
+
+\subsection{Immutable Adversarial Examples for CAPTCHA Generation}
+While the two works above demonstrate the exploitation of CAPTCHAs, the work
+presented here will demonstrate an approach for securing CAPTCHAs. Researchers
+at [] have demonstrated the ability to produce CAPTCHAs which are resistant to
+noise-removal attempts. Often, CAPTCHA solving techniques using neural networks
+apply filters to a CAPTCHA image to reduce noise and exaggerate feature
+sets. Generating CAPTCHAs with immutable noise would pose a significant
+challenge to many of the machine learning assisted CAPTCHA solvers.
+
+The researchers were able to create immutable adversarial CAPTCHAs by using a
+modification of the \emph{fast gradient sign} (FGS) method. The FGS method
+works by slightly altering the gradient values of certain image pixels to
+maximize \emph{loss} during the training process of a neural network. The
+modified FGS method takes target label and confidence level as inputs in
+addition to the original image. This allows for noise generation to work
+towards a specific goal, distributing the noise in such a way that is
+difficult to filter.
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics{fgs-method.png}}
+    \caption{Fast Gradient Sign Method.}
     \label{figure}
 \end{figure}
 
