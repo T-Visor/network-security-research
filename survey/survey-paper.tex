@@ -4,8 +4,7 @@
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{graphicx}
-\usepackage{textcomp}
-\usepackage{xcolor}
+\usepackage{textcomp} \usepackage{xcolor}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -197,23 +196,6 @@ learning lifecycle}. This lifecycle consists of building the dataset, feeding
 the input to the model, training the model, verifying the model accuracy,
 deployment, and maintenance.
 
-\subsection{Selecting Trusted Datasets}
-To secure a machine learning system, it is important to start at the beginning
-of the machine learning lifecycle, securing the input data itself. Since
-the training phase typically requires a large amount of data,
-many projects utilize publicly available datasets. Publicly available datasets
-are similar to open source projects, in that contributions are made by and
-verified by a community of individuals. This means that the trust is placed on
-the community to provide legitimate information. To find trusted datasets, one
-can check the policy of verifying contributions, number of community
-members/maintainers, and entities backing the project. For example, datasets
-from the Government, Universities, and repositories such as kaggle are
-typically trustworthy.
-
-If a dataset is chosen from a location with an unknown reputation, it is
-recommended to perform an audit to ensure the data consists of relevant
-samples, proper labels, and a balanced set of classes.
-
 \subsection{Sanitizing Input}
 The next step in securing a machine learning system is to use mechanisms which
 filter malicious samples from clean samples during the training phase. There
@@ -268,7 +250,7 @@ information of a machine learning model as a reference to another dataset, which
 will then need to be queried with subsequent processing.
 
 \section{Assisting Cyberattacks with Machine Learning}
-After discussing the vulnerabilities/mitigations for machine learning systems
+After discussing the attacks/mitigations for machine learning systems
 from the perspective of the defender, this section will discuss how machine
 learning technology is used to assist with the deployment of cyberattacks from
 the perspective of the attacker.
