@@ -30,7 +30,7 @@ particular, researchers have been interested in incorporating machine learning
 into the domain of cybersecurity, utilizing it from the perspective of an
 adversary or ally. Researchers have also been concerned with the security state
 of current machine learning models. This survey paper provides an overview of
-machine learning, vulnerabilities and mitigations to current machine learning
+machine learning, attacks and mitigations to current machine learning
     systems, machine learning use cases for adversaries, and future research
     directions.
 \end{abstract}
@@ -57,8 +57,8 @@ assist the deployment of cyberattacks. Enterprise machine learning applications
 may often contain large datasets of important information, becoming a potential 
 candidate of a targeted attack. This paper will survey the domain of
 cybersecurity with regard to machine learning. This topic will explore the
-fundamentals of machine learning, current vulnerabilities in machine learning
-systems, mitigations to machine learning vulnerabilities, machine learning technology from the perspective of adversaries, and
+fundamentals of machine learning, current attacks on machine learning
+systems, mitigations to machine learning attacks, machine learning technology from the perspective of adversaries, and
 future research directions.
 
 \section{Overview}
@@ -75,16 +75,22 @@ of program behavior to achieve the solution. However, this approach does not sca
 with the complexity of additional rules and/or possible solutions. An
 example is image classification, where the logic needed to compare images
 is complex. This becomes a bigger concern when new classifications need to be
-derived with new image data. Machine learning flips the traditional programming
+derived with new data. Machine learning flips the traditional programming
 paradigm on its head, by taking a series of solutions as input, and
 letting the machine develop the rules by detecting patterns in the solutions.
 The result is a self-propagating mathematical model, capable of making
-decisions on newly supplied data. The mathematical model is often represented
-as an \emph{Artificial Neural Network} (ANN), whose name is inspired by the
-biological brain, mimicking the way neurons interact with one another. ANN's comprise of an input layer, one
-or more hidden layers for data processing, and an output layer for
-decision-making. This approach relies on large sets of
-well-defined data, and has the flexibility for being used in many different applications.
+decisions on newly supplied data. This is what is known as a \emph{machine
+learning model}, a software component which can be saved to a file and
+integrated into larger software systems.
+
+Machine learning models can be implemented using a number of different
+algorithms, some popular examples will be discussed in this paragraph. \emph{Regression algorithms} use statistics to model the
+relationships between different variables plotted on a graph. \emph{Decision
+tree algorithms} represent the problems using trees, where internal nodes represent conditional statements and leaf nodes
+represent decisions. Lastly, \emph{artificial neural networks} are used in a
+subset of machine learning known as \emph{deep learning}, where the algorithms
+are modeled to mimic the structure of biological neural networks found in
+animal brains.  
 
 Briefly mentioned earlier, a common use case for machine learning is
 \emph{classification}, where a dataset is categorized into different groups
@@ -111,13 +117,13 @@ classifying a separate dataset to guarantee the accuracy of a model and
 preventing a phenomenon called \emph{over-fitting}, where a model will only
 'memorize' characteristics or patterns of training data.
 
-\section{Vulnerabilities in Machine Learning Models}
+\section{Attacks to Machine Learning Models}
 Due to the unique mechanism for constructing machine learning models, there are
 several ways which they can be exploited by an attacker. As a result, the
 attack surface which exists on machine learning models will differ from
 traditional software systems.
-This section will discuss several vulnerabilities which are currently present
-in machine learning.
+This section will discuss several attack types which target machine learning
+systems.
 
 \subsection{Data Poisoning}
 Data Poisoning is the act of manipulating, removing, or adding
@@ -144,11 +150,11 @@ autonomous vehicle to misinterpret traffic signs, sneaking malicious data past a
 intrusion detection system, or bypassing email spam filters.
 
 \subsection{Membership Inference}
-Membership inference is a mechanism of data extraction, where an adversary
+Membership inference is a mechanism of data extraction, where an attacker 
 intends to know whether certain samples were used as training data for a
 machine learning model. This type of attack is also classified as a \emph{black box attack}.
 
-This particular vulnerability requires significant effort from the attacker.
+This particular attack requires significant effort from the attacker.
 The attacker would need access to a dataset of sufficient size mimicking the
 data in the target model. The data would then be used to create several
 \emph{shadow models}, which are used only to recognize differences
@@ -162,13 +168,13 @@ attacker has the capability to correlate information between datasets to target
 individuals for other cyberattacks.
 
 \subsection{Transfer Learning}
-Transfer learning is a mechanism where an adversary has the ability to study a
+Transfer learning is a mechanism where an attacker has the ability to study a
 publicly available machine learning model, and use that insight to sneak past
 and/or corrupt similar target systems. This type of attack is classified as a
 \emph{white box attack}, since the attacker would need to have full access to
 at least one machine learning model.
 
-This particular vulnerability requires the attacker to have knowledge of the
+This particular attack requires knowledge of the
 input data, learning mechanism, and output behavior of a machine learning model
 similar to the target. Once this information is obtained, the attacker would
 test the system and learn its overall behavior to enumerate flaws in the
@@ -179,11 +185,11 @@ Often, the goal of this attack is similar to the other two mentioned above. An
 attacker would use the information to trick, fool, manipulate, or sneak passed
 a target machine learning model.
 
-\section{Mitigations to Vulnerabilities}
+\section{Mitigations to Attacks}
 
 Due to the large attack surface found in machine learning models, there has
 been a significant focus in its security. This section will
-discuss several mitigations to the vulnerabilities discussed in the previous
+discuss several mitigations to the attacks discussed in the previous
 section. 
 
 This section will also reference a generic process known as the \emph{machine

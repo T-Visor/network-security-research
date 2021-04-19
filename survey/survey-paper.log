@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.5)  28 MAR 2021 23:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.5)  19 APR 2021 13:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -274,7 +274,7 @@ e
 
 
 ] [2]
-Underfull \hbox (badness 1571) in paragraph at lines 225--229
+Underfull \hbox (badness 1571) in paragraph at lines 231--235
 \OT1/ptm/m/n/11 Ru-bin-stein \OT1/ptm/m/it/11 et al\OT1/ptm/m/n/11 , uses an \O
 T1/ptm/m/it/11 anomaly-based \OT1/ptm/m/n/11 de-tec-tion
  []
@@ -297,7 +297,7 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  3676 strings out of 479383
  53023 string characters out of 5875831
- 345269 words of memory out of 5000000
+ 344269 words of memory out of 5000000
  20789 multiletter control sequences out of 15000+600000
  431768 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -306,7 +306,7 @@ Here is how much of TeX's memory you used:
 r/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/font
 s/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on survey-paper.pdf (6 pages, 76093 bytes).
+Output written on survey-paper.pdf (6 pages, 76305 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
