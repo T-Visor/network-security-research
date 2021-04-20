@@ -29,8 +29,9 @@ tkimbr1@students.towson.edu}
     including the deciphering of obfuscated text, transcribing of audio messages,
     tracking mouse movement, and more. This research will focus on automating the
     process of deciphering text-based CAPTCHAs using machine learning
-    techniques. Specifically, supervised learning is used to develop
-    a neural network which is capable of over 99\% accuracy for certain datasets. 
+    techniques. Specifically, supervised learning and convolutional neural
+    networks are used to develop
+    a model which is capable of over 99\% accuracy for certain datasets. 
     The goal of this research is to demonstrate the weaknesses associated with text-based
     CAPTCHA mechanisms, especially with the prevalence of machine learning
     tools.
@@ -72,9 +73,9 @@ website via API.
 While this mechanism can mitigate the majority of software bots, it is not
 effective against bots utilizing machine learning technology. This research
 paper demonstrates that a machine learning agent is capable of solving CAPTCHAs
-with the use of an open-source framework, several
-libraries, and convolutional neural networks. The goal of this research is to
-highlight the vulnerabilities which are present in simple CAPTCHA mechanisms.
+with the use of open-source tools, supervised training, and convolutional
+neural networks. The goal of this research is show how adversaries can use
+readily available technologies to exploit text-based CAPTCHA mechanisms.
 This paper will cover background/related work, the methodology  used for solving CAPTCHAs,
 challenges which were present, key contributions, results, and a section
 covering future work.
@@ -152,12 +153,50 @@ towards a specific goal, distributing the noise in such a way that is
 difficult to filter.
 
 \begin{figure}[htbp]
-    \centerline{\includegraphics{fgs-method.png}}
-    \caption{Fast Gradient Sign Method.}
+    \centerline{\includegraphics[scale=0.35]{fgsm_technique.png}}
+    \caption{FGS method fooling a machine learning model.}
     \label{figure}
 \end{figure}
 
 \section{Methodology}
+
+In this section, there will be a detailed explanation on the process for
+creating a CAPTCHA-solving machine learning model. 
+
+\subsection{Open-source Tool Selection}
+\emph{Python 3} will be the programming language of choice, due to its
+easy-to-use syntax, portability, and wide range of modules. 
+
+To complement
+Python 3, the \emph{Python Image Library (PIL)} will be used to generate
+CAPTCHA images, and \emph{TensorFlow} will be the core library for building the
+machine learning model. 
+
+Lastly, the code will be written for the \emph{Jupyter
+Notebook} environment, a popular open-source web application for creating/sharing
+documents in the scientific community.
+
+\subsection{Applied Machine Learning Principles}
+Two core machine learning principles will be applied when creating the
+CAPTCHA-solving model, \emph{convolutional neural networks (CNN's)} and
+\emph{supervised learning}. These two principles are commonly used for
+image-processing, a perfect use-case for CAPTCHA-solving.
+
+CNN's are a subset of \emph{artificial neural networks (ANN's)}, a family of algorithms
+which mimic the structure of biological neural networks found in animal brains.
+ANN's consist of an input layer for data, one or more hidden layers for
+data-processing, and an output layer for decision-making. CNN's use
+a combination of \emph{convolutional layers} and \emph{pooling layers} to
+represent the hidden layers in its structure. Convolutional layers are used to
+create feature maps, a technique used to extract characteristics from image
+data. A pooling layer is placed after each convolutional layer to reduce the
+size of each feature map, lowering the computation power required for
+further processing.
+
+Supervised learning is a technique to train a machine learning model with
+the use of labelled data. The labels in the dataset define a category or
+feature for each data instance.
+
 
 \section{Challenges}
 
