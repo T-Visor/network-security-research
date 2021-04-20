@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.19)  20 APR 2021 16:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.19)  20 APR 2021 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -286,19 +286,20 @@ Underfull \hbox (badness 2119) in paragraph at lines 45--56
 11 ompletely
  []
 
-<alphanumeric-captcha.png, id=1, 212.795pt x 211.79124pt>
-File: alphanumeric-captcha.png Graphic file (type png)
-<use alphanumeric-captcha.png>
-Package pdftex.def Info: alphanumeric-captcha.png  used on input line 68.
+<images/alphanumeric-captcha.png, id=1, 212.795pt x 211.79124pt>
+File: images/alphanumeric-captcha.png Graphic file (type png)
+<use images/alphanumeric-captcha.png>
+Package pdftex.def Info: images/alphanumeric-captcha.png  used on input line 68
+.
 (pdftex.def)             Requested size: 148.95547pt x 148.25285pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./alphanumeric-captcha.png>]
-<grid-world.png, id=13, 264.99pt x 191.71625pt>
-File: grid-world.png Graphic file (type png)
-<use grid-world.png>
-Package pdftex.def Info: grid-world.png  used on input line 104.
+ <./images/alphanumeric-captcha.png>]
+<images/grid-world.png, id=13, 264.99pt x 191.71625pt>
+File: images/grid-world.png Graphic file (type png)
+<use images/grid-world.png>
+Package pdftex.def Info: images/grid-world.png  used on input line 104.
 (pdftex.def)             Requested size: 132.49467pt x 95.85788pt.
 
 Underfull \hbox (badness 1668) in paragraph at lines 110--117
@@ -310,22 +311,23 @@ Underfull \hbox (badness 2961) in paragraph at lines 110--117
 \OT1/ptm/m/n/11 char-ac-ter recog-ni-tion tech-niques. More specif-i-cally,
  []
 
-<negative-kerning.png, id=14, 232.87pt x 113.42375pt>
-File: negative-kerning.png Graphic file (type png)
-<use negative-kerning.png>
-Package pdftex.def Info: negative-kerning.png  used on input line 132.
+<images/negative-kerning.png, id=14, 232.87pt x 113.42375pt>
+File: images/negative-kerning.png Graphic file (type png)
+<use images/negative-kerning.png>
+Package pdftex.def Info: images/negative-kerning.png  used on input line 132.
 (pdftex.def)             Requested size: 116.43471pt x 56.71173pt.
 
 Underfull \hbox (badness 1902) in paragraph at lines 137--137
  \OT1/ptm/m/it/11 C. Im-mutable Ad-ver-sar-ial Ex-am-ples for CAPTCHA
  []
 
-<fgsm_technique.png, id=15, 702.625pt x 279.0425pt>
-File: fgsm_technique.png Graphic file (type png)
-<use fgsm_technique.png>
-Package pdftex.def Info: fgsm_technique.png  used on input line 156.
+<images/fgsm_technique.png, id=15, 702.625pt x 279.0425pt>
+File: images/fgsm_technique.png Graphic file (type png)
+<use images/fgsm_technique.png>
+Package pdftex.def Info: images/fgsm_technique.png  used on input line 156.
 (pdftex.def)             Requested size: 245.92242pt x 97.66634pt.
-[2 <./grid-world.png> <./negative-kerning.png> <./fgsm_technique.png>]
+[2 <./images/grid-world.png> <./images/negative-kerning.png> <./images/fgsm_tec
+hnique.png>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -343,8 +345,8 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3703 strings out of 479383
- 53553 string characters out of 5875830
+ 3704 strings out of 479383
+ 53700 string characters out of 5875830
  341312 words of memory out of 5000000
  20810 multiletter control sequences out of 15000+600000
  432875 words of font info for 73 fonts, out of 8000000 for 9000
