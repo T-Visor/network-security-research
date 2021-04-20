@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.19)  20 APR 2021 16:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.19)  20 APR 2021 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -328,6 +328,9 @@ Package pdftex.def Info: images/fgsm_technique.png  used on input line 156.
 (pdftex.def)             Requested size: 245.92242pt x 97.66634pt.
 [2 <./images/grid-world.png> <./images/negative-kerning.png> <./images/fgsm_tec
 hnique.png>]
+Underfull \vbox (badness 4024) has occurred while \output is active []
+
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -356,7 +359,7 @@ Here is how much of TeX's memory you used:
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb
 i8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on term-paper.pdf (3 pages, 399751 bytes).
+Output written on term-paper.pdf (3 pages, 399965 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream
