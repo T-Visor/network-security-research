@@ -168,10 +168,10 @@ difficult to filter.
 
 \section{Methodology}
 
-In this section, there will be a detailed explanation on the process for
-creating a CAPTCHA-solving machine learning model. The first two subsections
+In this section, a proof-of-concept CAPTCHA-solving model is constructed using
+open-source tools and machine learning principles. The first two subsections
 will give background information on the tools/principles being applied. The
-last four subsections will walk through the procedure for creating the machine
+rest of the subsections will walk through the procedure for creating the machine
 learning model.
 
 \subsection{Open-source Tool Selection}
@@ -208,7 +208,13 @@ feature for each data instance.
 Creating the training dataset consists of two parts; generating a large series
 of CAPTCHA images and creating labels for each CAPTCHA image. In order to
 satisfy these two requirements, PIL will be used to generate CAPTCHA images
-with their labels.
+with their labels. 
+
+In the PIL script, a total of 10,000 images will be generated to cover all
+possible variations of 4-digit numbers. Each image will use the same font,
+\emph{DejaVu Sans}, but with different text color. Random colored lines and dots
+will also be drawn on each CAPTCHA image. Afterwards, the image will be saved
+as a PNG image file, with the 4-digit string included in the file name.
 
 \begin{algorithm}
 	\caption{Generating labelled CAPTCHAs}
@@ -219,16 +225,22 @@ with their labels.
 		\State $number \leftarrow \Call{RandomFourDigitString}{\null} $
 		\State $font \leftarrow \Call{GetSystemFont}{\null} $
 		\State $captcha \leftarrow \Call{CreateImageWithText}{font, number} $
+        \State \Call {ColorText}{captcha}
 		\State \Call{DrawColoredLines}{captcha}
 		\State \Call{DrawColoredDots}{captcha}
 		\State $captchaName \leftarrow number + "\_image.png" $
 		\State \Call{Save}{captcha, captchaName}
-		\State $captchaCount \leftarrow $captchaCount + 1$
-
-		\EndWhile  \label{roy's loop}
-
+		\State $captchaCount \leftarrow $captchaCount + 1
+		\EndWhile  \label{captcha creation loop} 
 	\end{algorithmic}
 \end{algorithm}
+
+\begin{figure}[htbp]
+	\centerline{\includegraphics[scale=1.5]{images/0058_image.png}}
+	\caption{0058\_image.png}
+	\label{figure}
+\end{figure}
+
 
 \subsection{Defining the Neural Network Structure}
 
