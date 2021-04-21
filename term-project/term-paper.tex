@@ -10,12 +10,12 @@
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{algorithm}
-%\usepackage[algo2e]{algorithm2e} 
+\usepackage[algo2e]{algorithm2e} 
 \usepackage[noend]{algpseudocode}
 
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
-T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
 \title{Using Machine Learning To Solve Text-based CAPTCHAs\\
@@ -219,10 +219,9 @@ CAPTCHA images are to be saved in the same directory for processing later on.
 
 \begin{algorithm}
 	\caption{Generating labelled CAPTCHAs}
-
-	\begin{algorithmic}
-		\State $captchaCount \leftarrow 0$
-		\While{$captchaCount \not= 10,000$}
+		\State $captchaCount \leftarrow 0 $
+		\State
+		\While{$captchaCount < 10,000$} { 
 		\State $number \leftarrow \Call{GetFourDigitString}{captchaCount} $
 		\State $font \leftarrow \Call{GetSystemFont}{\null} $
 		\State $captcha \leftarrow \Call{CreateImageWithText}{font, number} $
@@ -232,8 +231,7 @@ CAPTCHA images are to be saved in the same directory for processing later on.
 		\State $captchaName \leftarrow number + "\_image.png" $
 		\State \Call{Save}{$captcha, captchaName} $
 		\State $captchaCount \leftarrow captchaCount + 1 $
-		\EndWhile  \label{captcha creation loop} 
-	\end{algorithmic}
+		\EndWhile}
 \end{algorithm}
 
 \begin{figure}[htbp]
@@ -255,9 +253,34 @@ attributes.
 All CAPTCHA images will be imported into the Jupyter Notebook file by obtaining
 the file path to the directory that they were stored. A function will then
 parse the file paths to obtain the 4-digit CAPTCHA string associated with each
-CAPTCHA image. Then the pandas DataFrame will store store a pair of values for
-each CAPTCHA image, the file path and its 4-digit CAPTCHA string. This
+CAPTCHA image. The pandas DataFrame will be used to store a pair of values
+for each row, the CAPTCHA image path and the 4-digit CAPTCHA string. This
 associates the label with its respective data.
+
+
+\begin{algorithm}[]
+  \SetKwInOut{Input}{Input}
+  \SetKwInOut{Output}{Output}
+  \SetKwProg{try}{try}{:}{}
+  \SetKwProg{catch}{catch}{:}{end}
+  \Input{String $filePath}
+  \Output{String $label}
+
+  \try{}{
+    $fileName \leftarrow \Call{SplitFileName}{filePath} $
+
+	$fileName \leftarrow \Call{SplitExtension}{fileName, ".png"} $
+
+	$label \leftarrow \Call{Split}{fileName, "\_"} $
+
+  	\Return $label $
+  }
+  \catch{InvalidPathException}{
+    \Return $UNSUCCESSFUL $
+  }
+  \caption{Parse file paths}
+  \label{alg:exep}
+\end{algorithm}
 
 
 \subsection{Defining the Neural Network Structure}
