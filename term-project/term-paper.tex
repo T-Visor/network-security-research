@@ -210,7 +210,7 @@ of CAPTCHA images and creating labels for each CAPTCHA image. In order to
 satisfy these two requirements, PIL will be used to generate CAPTCHA images
 with their labels. 
 
-In the PIL script, a total of 10,000 images will be generated to cover all
+In a script using PIL, a total of 10,000 images will be generated to cover all
 possible variations of 4-digit numbers. Each image will use the same font,
 \emph{DejaVu Sans}, but with different text color. Random colored lines and dots
 will also be drawn on each CAPTCHA image. Afterwards, the image will be saved
@@ -222,15 +222,15 @@ as a PNG image file, with the 4-digit string included in the file name.
 	\begin{algorithmic}
 		\State $captchaCount \leftarrow 0$
 		\While{$captchaCount \not= 10,000$}
-		\State $number \leftarrow \Call{RandomFourDigitString}{\null} $
+		\State $number \leftarrow \Call{GetFourDigitString}{captchaCount} $
 		\State $font \leftarrow \Call{GetSystemFont}{\null} $
 		\State $captcha \leftarrow \Call{CreateImageWithText}{font, number} $
-        \State \Call {ColorText}{captcha}
-		\State \Call{DrawColoredLines}{captcha}
-		\State \Call{DrawColoredDots}{captcha}
+        \State \Call {ColorText}{$captcha} $
+		\State \Call{DrawColoredLines}{$captcha} $
+		\State \Call{DrawColoredDots}{$captcha} $
 		\State $captchaName \leftarrow number + "\_image.png" $
-		\State \Call{Save}{captcha, captchaName}
-		\State $captchaCount \leftarrow $captchaCount + 1
+		\State \Call{Save}{$captcha, captchaName} $
+		\State $captchaCount \leftarrow captchaCount + 1 $
 		\EndWhile  \label{captcha creation loop} 
 	\end{algorithmic}
 \end{algorithm}
