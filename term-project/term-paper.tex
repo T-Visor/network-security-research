@@ -6,6 +6,14 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{algorithm}
+%\usepackage[algo2e]{algorithm2e} 
+\usepackage[noend]{algpseudocode}
+
+
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
 T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -23,22 +31,22 @@ tkimbr1@students.towson.edu}
 \maketitle
 
 \begin{abstract}
-    CAPTCHA is an acronym for the "Completely Automated Public Turing test
-    to tell Computers and Humans Apart". It is a mechanism which is used to
-    distinguish real human users from bots. CAPTCHAs come in a variety of forms,
-    including the deciphering of obfuscated text, transcribing of audio messages,
-    tracking mouse movement, and more. This research will focus on automating the
-    process of deciphering text-based CAPTCHAs using machine learning
-    techniques. Specifically, supervised learning and convolutional neural
-    networks are used to develop
-    a model which is capable of over 99\% accuracy for certain datasets. 
-    The goal of this research is to demonstrate the weaknesses associated with text-based
-    CAPTCHA mechanisms, especially with the prevalence of machine learning
-    tools.
+	CAPTCHA is an acronym for the "Completely Automated Public Turing test
+	to tell Computers and Humans Apart". It is a mechanism which is used to
+	distinguish real human users from bots. CAPTCHAs come in a variety of forms,
+	including the deciphering of obfuscated text, transcribing of audio messages,
+	tracking mouse movement, and more. This research will focus on automating the
+	process of deciphering text-based CAPTCHAs using machine learning
+	techniques. Specifically, supervised learning and convolutional neural
+	networks are used to develop
+	a model which is capable of over 99\% accuracy for certain datasets. 
+	The goal of this research is to demonstrate the weaknesses associated with text-based
+	CAPTCHA mechanisms, especially with the prevalence of machine learning
+	tools.
 \end{abstract}
 
 \begin{IEEEkeywords}
-    machine learning, neural networks, supervised training, CAPTCHA
+	machine learning, neural networks, supervised training, CAPTCHA
 \end{IEEEkeywords}
 
 \section{Introduction}
@@ -65,9 +73,9 @@ content management systems (such as WordPress) or can be integrated into a
 website via API.
 
 \begin{figure}[htbp]
-    \centerline{\includegraphics[scale=0.7]{images/alphanumeric-captcha.png}}
-    \caption{Example of a text-based CAPTCHA.}
-    \label{figure}
+	\centerline{\includegraphics[scale=0.7]{images/alphanumeric-captcha.png}}
+	\caption{Example of a text-based CAPTCHA.}
+	\label{figure}
 \end{figure}
 
 While this mechanism can mitigate the majority of software bots, it is not
@@ -101,9 +109,9 @@ This methodology was able to achieve a success rate of 97.4\% on a 100x100
 grid and 96.7\% on a 1000x1000 display.
 
 \begin{figure}[htbp]
-    \centerline{\includegraphics[scale=0.5]{images/grid-world.png}}
-    \caption{Grid world model.}
-    \label{figure}
+	\centerline{\includegraphics[scale=0.5]{images/grid-world.png}}
+	\caption{Grid world model.}
+	\label{figure}
 \end{figure}
 
 \subsection{Generic Solving of Text-based CAPTCHAs}
@@ -129,9 +137,9 @@ each partitioning combination and determines which characters are most likely
 present in the CAPTCHA.
 
 \begin{figure}[htbp]
-    \centerline{\includegraphics[scale=0.5]{images/negative-kerning.png}}
-    \caption{Example of negative kerning.}
-    \label{figure}
+	\centerline{\includegraphics[scale=0.5]{images/negative-kerning.png}}
+	\caption{Example of negative kerning.}
+	\label{figure}
 \end{figure}
 
 \subsection{Immutable Adversarial Examples for CAPTCHA Generation}
@@ -153,9 +161,9 @@ towards a specific goal, distributing the noise in such a way that is
 difficult to filter.
 
 \begin{figure}[htbp]
-    \centerline{\includegraphics[scale=0.35]{images/fgsm_technique.png}}
-    \caption{FGS method fooling a machine learning model.}
-    \label{figure}
+	\centerline{\includegraphics[scale=0.35]{images/fgsm_technique.png}}
+	\caption{FGS method fooling a machine learning model.}
+	\label{figure}
 \end{figure}
 
 \section{Methodology}
@@ -197,7 +205,30 @@ the use of labelled data. The labels in the dataset define a category or
 feature for each data instance.
 
 \subsection{Creating the Training Data}
+Creating the training dataset consists of two parts; generating a large series
+of CAPTCHA images and creating labels for each CAPTCHA image. In order to
+satisfy these two requirements, PIL will be used to generate CAPTCHA images
+with their labels.
 
+\begin{algorithm}
+	\caption{Generating labelled CAPTCHAs}
+
+	\begin{algorithmic}
+		\State $captchaCount \leftarrow 0$
+		\While{$captchaCount \not= 10,000$}
+		\State $number \leftarrow \Call{RandomFourDigitString}{\null} $
+		\State $font \leftarrow \Call{GetSystemFont}{\null} $
+		\State $captcha \leftarrow \Call{CreateImageWithText}{font, number} $
+		\State \Call{DrawColoredLines}{captcha}
+		\State \Call{DrawColoredDots}{captcha}
+		\State $captchaName \leftarrow number + "\_image.png" $
+		\State \Call{Save}{captcha, captchaName}
+		\State $captchaCount \leftarrow $captchaCount + 1$
+
+		\EndWhile  \label{roy's loop}
+
+	\end{algorithmic}
+\end{algorithm}
 
 \subsection{Defining the Neural Network Structure}
 
@@ -214,13 +245,13 @@ feature for each data instance.
 
 
 \begin{thebibliography}{00}
-    \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
-    \bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
-    \bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-    \bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
-    \bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
-    \bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-    \bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+	\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
+	\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
+	\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
+	\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
+	\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
+	\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
+	\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
 \end{thebibliography}
 \vspace{12pt}
 \color{red}
