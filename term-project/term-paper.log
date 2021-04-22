@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  21 APR 2021 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  22 APR 2021 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -355,6 +355,9 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box61
 )
 (./term-paper.aux
+
+LaTeX Warning: Label `figure' multiply defined.
+
 
 LaTeX Warning: Label `figure' multiply defined.
 
@@ -810,6 +813,11 @@ L/cmm/m/it/10.95 fileName; \OT1/cmr/m/n/10.95 "\OML/cmm/m/it/10.95 :png\OT1/cmr
 /m/n/10.95 ")$ 
  []
 
+<images/dataframe-image.png, id=29, 572.1375pt x 451.6875pt>
+File: images/dataframe-image.png Graphic file (type png)
+<use images/dataframe-image.png>
+Package pdftex.def Info: images/dataframe-image.png  used on input line 286.
+(pdftex.def)             Requested size: 228.85094pt x 180.67178pt.
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -821,18 +829,16 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4
-
-] (./term-paper.aux)
+[4 <./images/dataframe-image.png>] (./term-paper.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6536 strings out of 479383
- 97303 string characters out of 5875830
+ 6541 strings out of 479383
+ 97461 string characters out of 5875830
  417644 words of memory out of 5000000
- 23544 multiletter control sequences out of 15000+600000
+ 23548 multiletter control sequences out of 15000+600000
  438928 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,10n,76p,324b,274s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -842,10 +848,10 @@ c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/
 urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on term-paper.pdf (4 pages, 435902 bytes).
+Output written on term-paper.pdf (4 pages, 506349 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
+ 57 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

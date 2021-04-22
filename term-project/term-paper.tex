@@ -252,8 +252,8 @@ attributes.
 
 All CAPTCHA images will be imported into the Jupyter Notebook file by obtaining
 the file path to the directory that they were stored. A function will then
-parse the file paths to obtain the 4-digit CAPTCHA string associated with each
-CAPTCHA image. The pandas DataFrame will be used to store a pair of values
+be called repeatedly to parse each file path and obtain the 4-digit CAPTCHA string associated with each
+CAPTCHA image. The pandas DataFrame will then be used to store a pair of values
 for each row, the CAPTCHA image path and the 4-digit CAPTCHA string. This
 associates the label with its respective data.
 
@@ -278,9 +278,15 @@ associates the label with its respective data.
   \catch{InvalidPathException}{
     \Return $UNSUCCESSFUL $
   }
-  \caption{Parse file paths}
+  \caption{Get label for CAPTCHA image}
   \label{alg:exep}
 \end{algorithm}
+
+\begin{figure}[htbp]
+	\centerline{\includegraphics[scale=0.4]{images/dataframe-image.png}}
+	\caption{Python pandas DataFrame.}
+	\label{figure}
+\end{figure}
 
 
 \subsection{Defining the Neural Network Structure}
