@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  24 APR 2021 23:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  25 APR 2021 00:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -500,13 +500,13 @@ Package pdftex.def Info: images/cnn-example.png  used on input line 208.
 <to be read again> 
                    \ALG@currentblock@0 
 l.230 		\State
-               $captchaCount \leftarrow 0 $
+               $count \leftarrow 0 $
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
 l.230 		\State
-               $captchaCount \leftarrow 0 $
+               $count \leftarrow 0 $
 ? 
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
@@ -516,7 +516,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.230 		\State
-               $captchaCount \leftarrow 0 $
+               $count \leftarrow 0 $
 ? 
 LaTeX Font Info:    Calculating math sizes for size <11> on input line 230.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 230
@@ -586,12 +586,6 @@ l.244 \end
 l.244 \end
           {algorithm}
 ? 
-
-Overfull \hbox (7.21072pt too wide) in paragraph at lines 244--244
-[]$\OML/cmm/m/it/10.95 number \OMS/cmsy/m/n/10.95   []\OT1/cmr/m/n/10.95 (\OML/
-cmm/m/it/10.95 captchaCount\OT1/cmr/m/n/10.95 )$ 
- []
-
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -825,8 +819,8 @@ LaTeX Warning: No positions in optional float specifier.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.275   \Input{String $filePath}
-                                
+l.275   \Input{String $file\_path}
+                                  
 ? 
 ! Missing $ inserted.
 <inserted text> 
@@ -834,17 +828,6 @@ l.275   \Input{String $filePath}
 l.276   \Output{String $label}
                               
 ? 
-
-Overfull \hbox (8.79344pt too wide) in paragraph at lines 287--287
-[]$\OML/cmm/m/it/10.95 fileName \OMS/cmsy/m/n/10.95   []\OT1/cmr/m/n/10.95 (\OM
-L/cmm/m/it/10.95 fileName; \OT1/cmr/m/n/10.95 "\OML/cmm/m/it/10.95 :png\OT1/cmr
-/m/n/10.95 ")$ 
- []
-
-
-Underfull \vbox (badness 7221) has occurred while \output is active []
-
-
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -875,7 +858,7 @@ c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/
 urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on term-paper.pdf (4 pages, 682549 bytes).
+Output written on term-paper.pdf (4 pages, 682581 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
