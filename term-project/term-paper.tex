@@ -204,6 +204,13 @@ Supervised learning is a technique to train a machine learning model with
 the use of labelled data. The labels in the dataset define a category or
 feature for each data instance.
 
+\begin{figure}[htbp]
+	\centerline{\includegraphics[scale=0.25]{images/cnn-example.png}}
+	\caption{FGS Example structure of convolutional neural network.}
+	\label{figure}
+\end{figure}
+
+
 \subsection{Creating the Training Data}
 Creating the training dataset consists of two parts; generating a large series
 of CAPTCHA images and creating labels for each CAPTCHA image. In order to
@@ -211,11 +218,12 @@ satisfy these two requirements, PIL will be used to generate CAPTCHA images
 with their labels. 
 
 In a script using PIL, a total of 10,000 images will be generated to cover all
-possible variations of 4-digit numbers. Each image will use the same font,
-\emph{DejaVu Sans}, but with different text color. Random colored lines and dots
-will also be drawn on each CAPTCHA image. Afterwards, the image will be saved
+possible variations of 4-digit numbers. Each image will use a dimension of 
+100x100 pixels and use a consistent font \emph{(DejaVu Sans)}. To obfuscate the
+text, each image will contain random colored dots and lines. A different color
+will also be used to print the text in each image. Afterwards, the image will be saved
 as a PNG image file, with the 4-digit string included in the file name. All
-CAPTCHA images are to be saved in the same directory for processing later on.
+CAPTCHA images will be saved in the same directory for processing later on.
 
 \begin{algorithm}
 	\caption{Generating labelled CAPTCHAs}
@@ -225,6 +233,7 @@ CAPTCHA images are to be saved in the same directory for processing later on.
 		\State $number \leftarrow \Call{GetFourDigitString}{captchaCount} $
 		\State $font \leftarrow \Call{GetSystemFont}{\null} $
 		\State $captcha \leftarrow \Call{CreateImageWithText}{font, number} $
+        \State \Call{Resize}{$captcha, 100, 100} $
         \State \Call {ColorText}{$captcha} $
 		\State \Call{DrawColoredLines}{$captcha} $
 		\State \Call{DrawColoredDots}{$captcha} $
@@ -282,14 +291,16 @@ associates the label with its respective data.
   \label{alg:exep}
 \end{algorithm}
 
-\begin{figure}[htbp]
-	\centerline{\includegraphics[scale=0.4]{images/dataframe-image.png}}
-	\caption{Python pandas DataFrame.}
-	\label{figure}
-\end{figure}
-
-
 \subsection{Defining the Neural Network Structure}
+In addition to TensorFlow, the library \emph{Keras} will be used to define the
+layers of the neural network. The purpose of using this neural network is to extract the features
+(the sequence of digits) which are present in each CAPTCHA image.
+
+The first layer of the neural network is the \emph{input layer}, which will be
+the entry point for image data. Here, the input layer will specify each CAPTCHA image
+to have a height and width of 100 pixels, and detect 3 color channels of
+(red, green, and blue). This will reject anomalies presented to the machine
+learning model and enforce uniformity in the images.
 
 \subsection{Training the Machine Learning Model}
 

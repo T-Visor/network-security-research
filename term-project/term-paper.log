@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  22 APR 2021 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  24 APR 2021 23:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -490,16 +490,22 @@ Package pdftex.def Info: images/fgsm_technique.png  used on input line 164.
 (pdftex.def)             Requested size: 245.92242pt x 97.66634pt.
 [2 <./images/grid-world.png> <./images/negative-kerning.png> <./images/fgsm_tec
 hnique.png>]
+<images/cnn-example.png, id=22, 888.31876pt x 465.74pt>
+File: images/cnn-example.png Graphic file (type png)
+<use images/cnn-example.png>
+Package pdftex.def Info: images/cnn-example.png  used on input line 208.
+(pdftex.def)             Requested size: 222.07915pt x 116.43471pt.
+
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.222 		\State
+l.230 		\State
                $captchaCount \leftarrow 0 $
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.222 		\State
+l.230 		\State
                $captchaCount \leftarrow 0 $
 ? 
 
@@ -509,16 +515,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.222 		\State
+l.230 		\State
                $captchaCount \leftarrow 0 $
 ? 
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 222.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 222
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 230.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 230
 .
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 222
+LaTeX Font Info:    Trying to load font information for U+msb on input line 230
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -527,13 +533,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.223 		\State
+l.231 		\State
               
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.223 		\State
+l.231 		\State
               
 ? 
 
@@ -543,19 +549,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.223 		\State
+l.231 		\State
               
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 
@@ -565,23 +571,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 
-Overfull \hbox (7.21072pt too wide) in paragraph at lines 235--235
+Overfull \hbox (7.21072pt too wide) in paragraph at lines 244--244
 []$\OML/cmm/m/it/10.95 number \OMS/cmsy/m/n/10.95   []\OT1/cmr/m/n/10.95 (\OML/
 cmm/m/it/10.95 captchaCount\OT1/cmr/m/n/10.95 )$ 
  []
@@ -593,19 +599,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 
@@ -615,23 +621,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 
-Overfull \hbox (15.15715pt too wide) in paragraph at lines 235--235
+Overfull \hbox (15.15715pt too wide) in paragraph at lines 244--244
 []$\OML/cmm/m/it/10.95 captcha \OMS/cmsy/m/n/10.95   []\OT1/cmr/m/n/10.95 (\OML
 /cmm/m/it/10.95 font; number\OT1/cmr/m/n/10.95 )$ 
  []
@@ -643,19 +649,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 
@@ -665,19 +671,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 
@@ -687,19 +693,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 
@@ -709,19 +715,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 
@@ -731,19 +737,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 
@@ -753,19 +759,41 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.235 \end
+l.244 \end
+          {algorithm}
+? 
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.244 \end
+          {algorithm}
+? 
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.244 \end
+          {algorithm}
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.244 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makenobeginrepeat ...LG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 
@@ -775,49 +803,48 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    \ALG@b@2@EndWhile@0 
-l.235 \end
+l.244 \end
           {algorithm}
 ? 
-<images/0058_image.png, id=22, 90.3375pt x 60.225pt>
+<images/0058_image.png, id=23, 90.3375pt x 60.225pt>
 File: images/0058_image.png Graphic file (type png)
 <use images/0058_image.png>
-Package pdftex.def Info: images/0058_image.png  used on input line 238.
+Package pdftex.def Info: images/0058_image.png  used on input line 247.
 (pdftex.def)             Requested size: 135.50589pt x 90.33725pt.
-[3 <./images/0058_image.png (PNG copy)>]
+[3 <./images/cnn-example.png> <./images/0058_image.png (PNG copy)>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 261.
+               Default added (so using `htbp') on input line 270.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.266   \Input{String $filePath}
+l.275   \Input{String $filePath}
                                 
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.267   \Output{String $label}
+l.276   \Output{String $label}
                               
 ? 
 
-Overfull \hbox (8.79344pt too wide) in paragraph at lines 278--278
+Overfull \hbox (8.79344pt too wide) in paragraph at lines 287--287
 []$\OML/cmm/m/it/10.95 fileName \OMS/cmsy/m/n/10.95   []\OT1/cmr/m/n/10.95 (\OM
 L/cmm/m/it/10.95 fileName; \OT1/cmr/m/n/10.95 "\OML/cmm/m/it/10.95 :png\OT1/cmr
 /m/n/10.95 ")$ 
  []
 
-<images/dataframe-image.png, id=29, 572.1375pt x 451.6875pt>
-File: images/dataframe-image.png Graphic file (type png)
-<use images/dataframe-image.png>
-Package pdftex.def Info: images/dataframe-image.png  used on input line 286.
-(pdftex.def)             Requested size: 228.85094pt x 180.67178pt.
+
+Underfull \vbox (badness 7221) has occurred while \output is active []
+
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -829,14 +856,14 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4 <./images/dataframe-image.png>] (./term-paper.aux)
+[4] (./term-paper.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  6541 strings out of 479383
- 97461 string characters out of 5875830
+ 97437 string characters out of 5875830
  417644 words of memory out of 5000000
  23548 multiletter control sequences out of 15000+600000
  438928 words of font info for 92 fonts, out of 8000000 for 9000
@@ -848,7 +875,7 @@ c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/
 urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on term-paper.pdf (4 pages, 506408 bytes).
+Output written on term-paper.pdf (4 pages, 682549 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
