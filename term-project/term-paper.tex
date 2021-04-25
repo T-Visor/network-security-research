@@ -291,6 +291,13 @@ associates the label with its respective data.
   \label{alg:exep}
 \end{algorithm}
 
+\begin{figure}[htbp]
+	\centerline{\includegraphics[scale=0.5]{images/pandas-dataframe.png}}
+	\caption{Portion of resulting DataFrame.}
+	\label{figure}
+\end{figure}
+
+
 \subsection{Defining the Neural Network Structure}
 In addition to TensorFlow, the library \emph{Keras} will be used to define the
 layers of the neural network. The purpose of using this neural network is to extract the features
@@ -302,8 +309,27 @@ to have a height and width of 100 pixels, and detect 3 color channels of
 (red, green, and blue). This will reject anomalies presented to the machine
 learning model and enforce uniformity.
 
-The \emph{hidden layers} are responsible for extracting the features in each
-image and recognizing patterns in the dataset.
+The \emph{hidden layers} are responsible for extracting and interpreting the
+features in the image data. Through experimentation, 3
+convolutional layers accompanied by 3 pooling layers have been sufficient 
+for feature extraction. This set produces the optimal number of parameters (or
+filters) which are required to extract the digits from each CAPTCHA image.
+Afterwards, a flattening layer will transform the multi-dimensional array
+representing each image into a single-dimension array for
+easier processing. 2 dense layers are used afterwards for learning the features
+which have been extracted from prior layers. 
+
+The final layer of the neural network is the \emph{output layer}, which is
+responsible for predicting which numbers appeared in a CAPTCHA image. In
+particular, a reshaping layer was used to format the prediction as a
+probability of numbers appearing for each digit position in the CAPTCHA.
+
+\begin{figure}[htbp]
+	\centerline{\includegraphics[scale=0.28]{images/model-summary.png}}
+	\caption{Neural network layers.}
+	\label{figure}
+\end{figure}
+
 
 \subsection{Training the Machine Learning Model}
 
