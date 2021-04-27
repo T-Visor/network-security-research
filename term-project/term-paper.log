@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  25 APR 2021 00:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  26 APR 2021 23:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -355,6 +355,12 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box61
 )
 (./term-paper.aux
+
+LaTeX Warning: Label `figure' multiply defined.
+
+
+LaTeX Warning: Label `figure' multiply defined.
+
 
 LaTeX Warning: Label `figure' multiply defined.
 
@@ -845,6 +851,17 @@ File: images/model-summary.png Graphic file (type png)
 Package pdftex.def Info: images/model-summary.png  used on input line 328.
 (pdftex.def)             Requested size: 191.95584pt x 168.06674pt.
 [4 <./images/pandas-dataframe.png> <./images/model-summary.png>]
+<images/accuracy.png, id=35, 562.1pt x 321.2pt>
+File: images/accuracy.png Graphic file (type png)
+<use images/accuracy.png>
+Package pdftex.def Info: images/accuracy.png  used on input line 360.
+(pdftex.def)             Requested size: 252.94266pt x 144.53867pt.
+<images/loss.png, id=36, 556.0775pt x 319.1925pt>
+File: images/loss.png Graphic file (type png)
+<use images/loss.png>
+Package pdftex.def Info: images/loss.png  used on input line 364.
+(pdftex.def)             Requested size: 250.23256pt x 143.63528pt.
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -856,18 +873,16 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5
-
-] (./term-paper.aux)
+[5 <./images/accuracy.png> <./images/loss.png>] (./term-paper.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6553 strings out of 479383
- 97767 string characters out of 5875830
+ 6565 strings out of 479383
+ 97995 string characters out of 5875830
  417644 words of memory out of 5000000
- 23558 multiletter control sequences out of 15000+600000
+ 23568 multiletter control sequences out of 15000+600000
  438928 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,10n,76p,324b,274s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -877,10 +892,10 @@ c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/
 urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on term-paper.pdf (5 pages, 796686 bytes).
+Output written on term-paper.pdf (5 pages, 829535 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 64 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

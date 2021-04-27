@@ -331,9 +331,45 @@ probability of numbers appearing for each digit position in the CAPTCHA.
 \end{figure}
 
 
-\subsection{Training the Machine Learning Model}
+\subsection{Training The Model}
+Now that both the model and training data are ready for use, the training 
+process may begin. There are two extra parameters which need to be defined when
+the model undergoes the learning process, \emph{epochs} and \emph{batch size}.
+Epochs refer to the number of training iterations while batch size
+refers to the number of training samples per iteration. Additionally, a batch
+size can also be specified for \emph{validation}, when the model is evaluated
+against test data. 10 epochs were used
+with a batch size/validation batch size of 64. These numbers were chosen as a balancing act between
+training time and completeness while also avoiding \emph{overfitting}.
+Overfitting is when a model memorizes the properties of 
+training data to an extent that it performs negatively on new data. 
 
 \section{Results}
+In this section, the metrics of the model will be analyzed along with its
+performance on new data.
+
+\subsection{Metrics}
+There are two main properties to evaluate in a machine learning model, its
+\emph{accuracy} and \emph{loss} over the duration of training. These two
+properties share an inverse relationship; accuracy determining the model's
+correctness and loss representing errors in prediction. Using an additional
+library, \emph{Matplotlib}, a graph representation of accuracy/loss can be
+produced for the model.
+
+\begin{figure}[htbp]
+	\centerline{\includegraphics[scale=0.45]{images/accuracy.png}}
+	\label{figure}
+\end{figure}
+\begin{figure}[htbp]
+	\centerline{\includegraphics[scale=0.45]{images/loss.png}}
+	\caption{Accuracy and loss metrics of model during training.}
+	\label{figure}
+\end{figure}
+
+The model was able to reach over 90\% accuracy and
+minimize loss to less than .5 after just 2 epochs. After 10 epochs, the model's
+accuracy reached 90\% with a loss of only .03. 
+
 
 \section{Challenges (mention caveats here)}
 
