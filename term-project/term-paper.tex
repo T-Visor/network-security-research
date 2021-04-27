@@ -420,11 +420,36 @@ browser automation software (such as Selenium). Since an adversary would want
 to leverage machine learning for CAPTCHA-solving automation, creating a bot
 with such capabilities is currently unfeasible.
 
-\section{Key Contributions}
-
 \section{Future Work}
+In this section, considerations are taken into how this research can be adapted
+for future machine learning techniques.
 
-\section{Conclusion}
+\subsection{Multi-label Classification Technique}
+One possible solution to solving a variety of CAPTCHA image styles is using 
+\emph{multi-label} classification. This technique is a derivative of supervised
+learning, where 2 or more labels are used for each data instance. In
+particular, this research can be extended by using 2 additional labels to
+represent fonts and CAPTCHA string length.
+
+\subsection{Reinforcement Learning Technique}
+Another possible solution is to use \emph{reinforcement learning}. This learning technique uses a reward-based
+system to incentivize certain actions over others. In particular, this research
+can be extended by using supervised training to recognize individual
+characters and digits. Afterwards, it can be deployed to solve CAPTCHAs in a
+live environment, and receive penalties/rewards based on the accuracy of its
+guesses.
+
+\subsection{Applying Principles to solve Google reCAPTCHAs}
+Lastly, an interesting research direction would be to apply machine learning
+techniques to solve Google's picture-based reCAPTCHAs. In particular, the
+principles used in this paper, supervised learning and convolutional neural
+networks, can be used for image classification. However, solving Google's picture-based
+reCAPTCHAs would require insight on interpreting a photo
+rather than just recognition. So in addition to using techniques in this
+research, the use of reinforcement learning may provide a feasible solution.
+
+
+\section{Conclusion (key contributions)}
 
 
 \begin{thebibliography}{00}
