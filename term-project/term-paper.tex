@@ -385,9 +385,9 @@ take each CAPTCHA image from the test dataset as input, and return a
 4-digit prediction value. The \emph{Matplotlib} library will be used again to
 visually represent the model's interpretation of CAPTCHA images. Each graph
 instance will contain the model's prediction value, CAPTCHA image, and true
-value (label for CAPTCHA image). Using 9 new CAPTCHA images, the model was able
-to correctly guess 8 of them. 
-
+value (label for CAPTCHA image). An example of the model's performance is
+demonstrated on 9 new CAPTCHA images, where it was able to accurately guess the
+contents of 8 images.
 
 \begin{figure}[htbp]
 	\centerline{\includegraphics[scale=0.35]{images/prediction-results.png}}
@@ -395,8 +395,30 @@ to correctly guess 8 of them.
 	\label{figure}
 \end{figure}
 
+\section{Challenges}
+In this section, the shortcomings of this research will be discussed.
+Specifically, an adversary who uses this technique would be limited by several
+factors including the variability of CAPTCHAs and integrating the model into automation software.
 
-\section{Challenges (mention caveats here)}
+\subsection{Variability Of Real-world CAPTCHAs}
+While the model produced in this research is able to accurately solve CAPTCHAs created
+from the PIL library, it is unable to solve CAPTCHA images
+used on live websites. This is due to the inherent variability of
+CAPTCHA-generating algorithms used on different platforms. Real-world CAPTCHAs
+will use a variety of fonts, image sizes, character-lengths, and distortion
+techniques to produce their images. The PIL library alone would be infeasible
+for creating the variation of CAPTCHA images required for use on live websites.
+
+\subsection{Integration Into Automation Software}
+The model produced in this research is currently confined to the Jupyter
+Notebook environment. For the model to be of any use to an adversary, it would
+need to be exported and integrated into another software system. Currently,
+TensorFlow supports model deployment to a Python application,
+browser environment, web application, mobile devices, or server environment.
+However, there is no general procedure for integrating the model into
+browser automation software (such as Selenium). Since an adversary would want
+to leverage machine learning for CAPTCHA-solving automation, a real-world bot
+with such capabilities is currently unfeasible.
 
 \section{Key Contributions}
 
