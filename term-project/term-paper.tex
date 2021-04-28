@@ -84,9 +84,8 @@ paper demonstrates that a machine learning agent is capable of solving CAPTCHAs
 with the use of open-source tools, supervised training, and convolutional
 neural networks. The goal of this research is show how adversaries can use
 readily available technologies to exploit text-based CAPTCHA mechanisms.
-This paper will cover background/related work, the methodology  used for solving CAPTCHAs,
-challenges which were present, key contributions, results, and a section
-covering future work.
+This paper will cover background/related work, the methodology  used for
+solving CAPTCHAs, results, challenges, future work, and concluding thoughts.
 
 \section{Background/Related Work}
 In this section, there will be a brief review of similar work which has been
@@ -449,8 +448,28 @@ rather than just recognition. So in addition to using techniques in this
 research, the use of reinforcement learning may provide a feasible solution.
 
 
-\section{Conclusion (key contributions)}
+\section{Conclusion}
+This research presents a proof-of-concept for how an adversary
+can leverage machine learning technology to assist with CAPTCHA-solving
+automation. Two novel algorithms were
+introduced for generating labelled CAPTCHAs and producing the corresponding
+labels for the training dataset. Assuming domain knowledge on the CAPTCHAs
+being solved, this work presents a simple mechanism for generating all possible
+numerical variations of fixed-digit CAPTCHAs. Therefore, batches of
+CAPTCHA images selected during training are representative samples. After 10
+iterations of training, the resulting machine learning model had a quoted
+accuracy of greater than 99\%. 
 
+While the approach used in this research assumes access to the target's
+CAPTCHA-generating algorithm, it provides a generalized framework for how
+adversaries can defeat CAPTCHAs hosted on live environments. In addition,
+several suggestions were provided on how this research
+can be extended.
+
+The effectiveness of the CAPTCHA-solving model in this work demonstrates the
+weaknesses associated with current text-based CAPTCHA mechanisms. As machine
+learning technologies evolve, so too must the defense mechanisms which are used
+in current software systems.
 
 \begin{thebibliography}{00}
 	\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
