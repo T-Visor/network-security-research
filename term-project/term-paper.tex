@@ -92,7 +92,7 @@ In this section, there will be a brief review of similar work which has been
 done with machine learning and CAPTCHAs.
 
 \subsection{Solving reCAPTCHAs With Reinforcement Learning}
-Researchers at \hl{[]} have demonstrated the ability to solve mouse-based reCAPTCHAs using
+Researchers at [1] have demonstrated the ability to solve mouse-based reCAPTCHAs using
 reinforcement learning. Google's reCAPTCHA mechanism is more difficult to solve
 compared to traditional CAPTCHAs due to its usage of mouse-tracking to
 determine if the user is a human. While the exact algorithm is unknown due to
@@ -114,7 +114,7 @@ grid and 96.7\% on a 1000x1000 display.
 \end{figure}
 
 \subsection{Generic Solving of Text-based CAPTCHAs}
-Researchers at \hl{[]} have provided a basic framework on solving CAPTCHAs using
+Researchers at [2] have provided a basic framework on solving CAPTCHAs using
 segmentation and character recognition techniques. More specifically, their
 technique is able to detect individual characters in CAPTCHAs with occluding
 lines. Traditional approaches to CAPTCHA-solving typically use two separate
@@ -144,7 +144,7 @@ present in the CAPTCHA.
 \subsection{Immutable Adversarial Examples for CAPTCHA Generation}
 While the two works above demonstrate the exploitation of CAPTCHAs, the work
 presented here will demonstrate an approach for securing CAPTCHAs. Researchers
-at \hl{[]} have demonstrated the ability to produce CAPTCHAs which are resistant to
+at [3] have demonstrated the ability to produce CAPTCHAs which are resistant to
 noise-removal attempts. Often, CAPTCHA solving techniques using neural networks
 apply filters to a CAPTCHA image; reducing noise and exaggerating features. Generating CAPTCHAs with immutable noise would pose a significant
 challenge to many of the machine learning assisted CAPTCHA solvers.
@@ -476,12 +476,16 @@ learning technologies evolve, so too must the defense mechanisms which are used
 in current software systems.
 
 \begin{thebibliography}{00}
-	\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
-	\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
-	\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-	\bibitem{b4} E. Alpaydin, Introduction to machine learning, MIT press, 2014.
-
-
+    \bibitem{b1} I. Akrout, A. Feriani, and M. Akrout, “Hacking Google
+        reCAPTCHA v3 using Reinforcement Learning.”
+    \bibitem{b2} E. B. Google, J. Aigrain, A. M. Google, and J. C. Mitchell,
+        “The End is Nigh: Generic Solving of Text-based CAPTCHAs.”
+	\bibitem{b3} M. Osadchy, J. Hernandez-Castro, S. Gibson, O. Dunkelman, and
+        D. Pérez-Cabo, “No Bot Expects the DeepCAPTCHA! Introducing Immutable
+        Adversarial Examples, With Applications to CAPTCHA Generation,” IEEE
+        Trans. Inf. FORENSICS Secur., vol. 12, no. 11, 2017, doi:
+        10.1109/TIFS.2017.2718479.
+    \bibitem{b4} E. Alpaydin, Introduction to machine learning, MIT press, 2014.
     \bibitem{b5} H. B. Demuth, M. H. Beale, O. De Jess, and M. T. Hagan, Neural network design, Martin Hagan, 2014.
 \end{thebibliography}
 
