@@ -216,9 +216,9 @@ of CAPTCHA images and creating labels for each one. In order to
 satisfy these two requirements, PIL will be used to generate CAPTCHA images
 with their labels. 
 
-In a script using PIL, a total of 10,000 images will be generated to cover all
-possible variations of 4-digit numbers. Each image will use a dimension of 
-100x100 pixels and use a consistent font \emph{(DejaVu Sans)}. To obfuscate the
+In a script using PIL, a total of 10,000 images will be generated. This creates a representative
+population of 4-digit CAPTCHAs ranging from '0000' to '9999'. Each image will use a dimension of 
+100x100 pixels along with a consistent font \emph{(DejaVu Sans)}. To obfuscate the
 text, each image will contain random colored dots and lines. A different color
 will also be used to print the text in each image. Afterwards, the image will be saved
 as a PNG image file, with the 4-digit string included in the file name. All
@@ -252,17 +252,17 @@ The rest of the model-building procedure will take place in the \emph{Jupyter
 Notebook}
 file. \emph{TensorFlow} will need to be imported along with a helper library,
 \emph{pandas}. The pandas library contains many data structures which are
-commonly used with TensorFlow. Since the CAPTCHA images generated in
-the PIL script will need to organized for TensorFlow to work with, the pandas
-\emph{DataFrame} structure will be used. The DataFrame is a tabular data
+commonly used with TensorFlow. The CAPTCHA images will need to be organized for
+TensorFlow to work with, this is where the pandas \emph{DataFrame} structure
+will be of use. The DataFrame is a tabular data
 structure with rows denoting iterations and columns representing data
 attributes.
 
-All CAPTCHA images will be imported into the Jupyter Notebook file by obtaining
-the file path to the directory that they were stored. A function will then
-be called repeatedly to parse each file path and obtain the 4-digit CAPTCHA string associated with each
+The CAPTCHA images will be imported into the Jupyter Notebook environment,
+using the directory where they were stored. A function will then
+be called repeatedly to parse each file path, obtaining the 4-digit string associated with each
 CAPTCHA image. The pandas DataFrame will then be used to store a pair of values
-for each row, the CAPTCHA image path and the 4-digit CAPTCHA string. This
+for each row; the CAPTCHA image path and its 4-digit string. This
 associates the label with its respective data.
 
 
@@ -305,7 +305,7 @@ layers of the neural network. The purpose of using this neural network is to ext
 The first layer of the neural network is the \emph{input layer}, which will be
 the entry point for image data. Here, the input layer will specify each CAPTCHA image
 to have a height and width of 100 pixels, and detect 3 color channels of
-(red, green, and blue). This will reject anomalies presented to the machine
+red, green, and blue (RGB). This will reject anomalies presented to the machine
 learning model and enforce uniformity.
 
 The \emph{hidden layers} are responsible for extracting and interpreting the
@@ -319,7 +319,7 @@ easier processing. 2 dense layers are used afterwards for learning the features
 which have been extracted from prior layers. 
 
 The final layer of the neural network is the \emph{output layer}, which is
-responsible for predicting which numbers appeared in a CAPTCHA image. In
+responsible for predicting which numbers are in a CAPTCHA image. In
 particular, a reshaping layer was used to format the prediction as a
 probability of numbers appearing for each digit position in the CAPTCHA.
 
@@ -335,13 +335,13 @@ Now that both the model and training data are ready for use, the training
 process may begin. There are two extra parameters which need to be defined when
 the model undergoes the learning process, \emph{epochs} and \emph{batch size}.
 Epochs refer to the number of training iterations while batch size
-refers to the number of training samples per iteration. Additionally, a batch
+refers to the number of training samples per iteration \hl{[]}. Additionally, a batch
 size can also be specified for \emph{validation}, when the model is evaluated
 against a subset of the training data. 10 epochs were used
-with a batch size/validation batch size of 64. These numbers were chosen as a balancing act between
+with a batch size and validation batch size of 64. These numbers were chosen as a balancing act between
 training time and completeness while also avoiding \emph{overfitting}.
 Overfitting is when a model memorizes the properties of 
-training data to an extent that it performs negatively on new data. 
+training data to an extent that it performs negatively on new data \hl{[]}. 
 
 \section{Results}
 In this section, the metrics of the model will be analyzed along with its
@@ -351,7 +351,7 @@ performance on new data.
 There are two main properties to evaluate in a machine learning model, its
 \emph{accuracy} and \emph{loss} over the duration of training. These two
 properties share an inverse relationship; accuracy determining the model's
-correctness and loss representing errors in prediction. Using an additional
+correctness and loss representing errors in prediction \hl{[]}. Using an additional
 library, \emph{Matplotlib}, a graph representation of accuracy/loss can be
 produced for the model.
 
@@ -368,7 +368,7 @@ produced for the model.
 Accuracy is represented as a percentage, with higher percentages being favored. On
 the other hand, loss is represented as a decimal value with lower values being
 favored. It is important to note that a model will practically never have an
-accuracy of 100\% or a loss value of 0.
+accuracy of 100\%, or a loss value of 0.
 
 The model was able to reach over 90\% accuracy and
 minimize loss to less than .5 after just 2 epochs. After 10 epochs, the model's
@@ -397,7 +397,8 @@ contents of 8 images.
 \section{Challenges}
 In this section, the shortcomings of this research will be discussed.
 Specifically, an adversary who uses this technique would be limited by several
-factors including the variability of CAPTCHAs and integrating the model into automation software.
+factors, including the variability of CAPTCHAs and integrating the model into
+automation software.
 
 \subsection{Variability Of Real-world CAPTCHAs}
 While the model produced in this research is able to accurately solve CAPTCHAs created
@@ -405,7 +406,7 @@ from the PIL library, it is unable to solve CAPTCHA images
 used on live websites. This is due to the inherent variability of
 CAPTCHA-generating algorithms used on different platforms. Real-world CAPTCHAs
 will use a variety of fonts, image sizes, character-lengths, and distortion
-techniques to produce their images. The PIL library alone would be infeasible
+techniques to produce their images. The PIL library alone would not be feasible 
 for creating the variation of CAPTCHA images required for use on live websites.
 
 \subsection{Integration Into Automation Software}
@@ -426,13 +427,13 @@ for future machine learning techniques.
 \subsection{Multi-label Classification Technique}
 One possible solution to solving a variety of CAPTCHA image styles is using 
 \emph{multi-label} classification. This technique is a derivative of supervised
-learning, where 2 or more labels are used for each data instance. In
+learning, where 2 or more labels are used for each data instance \hl{[]}. In
 particular, this research can be extended by using 2 additional labels to
 represent fonts and CAPTCHA string length.
 
 \subsection{Reinforcement Learning Technique}
 Another possible solution is to use \emph{reinforcement learning}. This learning technique uses a reward-based
-system to incentivize certain actions over others. In particular, this research
+system to incentivize certain actions over others \hl{[]}. In particular, this research
 can be extended by using supervised training to recognize individual
 characters and digits. Afterwards, it can be deployed to solve CAPTCHAs in a
 live environment, and receive penalties/rewards based on the accuracy of its
@@ -449,13 +450,11 @@ research, the use of reinforcement learning may provide a feasible solution.
 
 
 \section{Conclusion}
-This research presents a proof-of-concept for how an adversary
-can leverage machine learning technology to assist with CAPTCHA-solving
-automation. Two novel algorithms were
+This research presents a proof-of-concept for using machine learning to assist
+with CAPTCHA-solving automation. Two novel algorithms were
 introduced for generating labelled CAPTCHAs and producing the corresponding
 labels for the training dataset. Assuming domain knowledge on the CAPTCHAs
-being solved, this work presents a simple mechanism for generating all possible
-numerical variations of fixed-digit CAPTCHAs. Therefore, batches of
+being solved, this work presents a simple mechanism for generating numerical variations of fixed-digit CAPTCHAs. Therefore, batches of
 CAPTCHA images selected during training are representative samples. After 10
 iterations of training, the resulting machine learning model had a quoted
 accuracy of greater than 99\%. 
