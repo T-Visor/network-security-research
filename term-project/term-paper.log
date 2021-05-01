@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  1 MAY 2021 00:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  1 MAY 2021 00:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -892,7 +892,12 @@ Underfull \hbox (badness 3826) in paragraph at lines 428--433
 []\OT1/ptm/m/n/11 One pos-si-ble so-lu-tion to solv-ing a va-ri-ety of
  []
 
-[6]
+<images/picture-recaptcha.png, id=41, 399.4925pt x 578.16pt>
+File: images/picture-recaptcha.png Graphic file (type png)
+<use images/picture-recaptcha.png>
+Package pdftex.def Info: images/picture-recaptcha.png  used on input line 452.
+(pdftex.def)             Requested size: 139.82446pt x 202.35902pt.
+[6 <./images/picture-recaptcha.png>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -912,10 +917,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6744 strings out of 479383
- 100334 string characters out of 5875830
+ 6750 strings out of 479383
+ 100514 string characters out of 5875830
  421307 words of memory out of 5000000
- 23741 multiletter control sequences out of 15000+600000
+ 23746 multiletter control sequences out of 15000+600000
  439241 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,10n,76p,324b,274s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -925,10 +930,10 @@ c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/
 urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on term-paper.pdf (7 pages, 1005854 bytes).
+Output written on term-paper.pdf (7 pages, 1761040 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 75 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
