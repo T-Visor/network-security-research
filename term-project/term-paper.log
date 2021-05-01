@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  1 MAY 2021 00:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  1 MAY 2021 01:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -367,6 +367,9 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box61
 )
 (./term-paper.aux
+
+LaTeX Warning: Label `figure' multiply defined.
+
 
 LaTeX Warning: Label `figure' multiply defined.
 
@@ -917,20 +920,20 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6750 strings out of 479383
- 100514 string characters out of 5875830
- 421307 words of memory out of 5000000
- 23746 multiletter control sequences out of 15000+600000
+ 6748 strings out of 479383
+ 100506 string characters out of 5875830
+ 420301 words of memory out of 5000000
+ 23744 multiletter control sequences out of 15000+600000
  439241 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,10n,76p,324b,274s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,10n,76p,323b,274s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/
 urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on term-paper.pdf (7 pages, 1761040 bytes).
+Output written on term-paper.pdf (7 pages, 1760053 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream

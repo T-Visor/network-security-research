@@ -189,19 +189,19 @@ image-processing, a perfect use-case for CAPTCHA-solving.
 
 CNN's are a subset of \emph{artificial neural networks (ANN's)}, a family of algorithms
 which mimic the structure of biological neural networks found in animal brains
-\hl{[]}.
+[4].
 ANN's consist of an input layer for data, one or more hidden layers for
 data-processing, and an output layer for decision-making. CNN's use
 a combination of \emph{convolutional layers} and \emph{pooling layers} to
 represent the hidden layers in its structure. Convolutional layers are used to
 create feature maps, a technique used to extract characteristics from image
-data \hl{[]}. A pooling layer is placed after each convolutional layer to reduce the
+data. A pooling layer is placed after each convolutional layer to reduce the
 size of each feature map, lowering the computation power required for
-further processing \hl{[]}.
+further processing [5].
 
 Supervised learning is a technique to train a machine learning model with
 the use of labelled data. The labels in the dataset define a category or
-feature for each data instance \hl{[]}.
+feature for each data instance [4].
 
 \begin{figure}[htbp]
 	\centerline{\includegraphics[scale=0.25]{images/cnn-example.png}}
@@ -335,13 +335,13 @@ Now that both the model and training data are ready for use, the training
 process may begin. There are two extra parameters which need to be defined when
 the model undergoes the learning process, \emph{epochs} and \emph{batch size}.
 Epochs refer to the number of training iterations while batch size
-refers to the number of training samples per iteration \hl{[]}. Additionally, a batch
+refers to the number of training samples per iteration [4]. Additionally, a batch
 size can also be specified for \emph{validation}, when the model is evaluated
 against a subset of the training data. 10 epochs were used
 with a batch size and validation batch size of 64. These numbers were chosen as a balancing act between
 training time and completeness while also avoiding \emph{overfitting}.
 Overfitting is when a model memorizes the properties of 
-training data to an extent that it performs negatively on new data \hl{[]}. 
+training data to an extent that it performs negatively on new data [4]. 
 
 \section{Results}
 In this section, the metrics of the model will be analyzed along with its
@@ -351,7 +351,7 @@ performance on new data.
 There are two main properties to evaluate in a machine learning model, its
 \emph{accuracy} and \emph{loss} over the duration of training. These two
 properties share an inverse relationship; accuracy determining the model's
-correctness and loss representing errors in prediction \hl{[]}. Using an additional
+correctness and loss representing errors in prediction [4]. Using an additional
 library, \emph{Matplotlib}, a graph representation of accuracy/loss can be
 produced for the model.
 
@@ -427,13 +427,13 @@ for future machine learning techniques.
 \subsection{Multi-label Classification Technique}
 One possible solution to solving a variety of CAPTCHA image styles is using 
 \emph{multi-label} classification. This technique is a derivative of supervised
-learning, where 2 or more labels are used for each data instance \hl{[]}. In
+learning, where 2 or more labels are used for each data instance [4]. In
 particular, this research can be extended by using 2 additional labels to
 represent fonts and CAPTCHA string length.
 
 \subsection{Reinforcement Learning Technique}
 Another possible solution is to use \emph{reinforcement learning}. This learning technique uses a reward-based
-system to incentivize certain actions over others \hl{[]}. In particular, this research
+system to incentivize certain actions over others [4]. In particular, this research
 can be extended by using supervised training to recognize individual
 characters and digits. Afterwards, it can be deployed to solve CAPTCHAs in a
 live environment, and receive penalties/rewards based on the accuracy of its
@@ -479,13 +479,11 @@ in current software systems.
 	\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
 	\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
 	\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-	\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
-	\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
-	\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-	\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
-\end{thebibliography}
-\vspace{12pt}
-\color{red}
-IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
+	\bibitem{b4} E. Alpaydin, Introduction to machine learning, MIT press, 2014.
 
+
+    \bibitem{b5} H. B. Demuth, M. H. Beale, O. De Jess, and M. T. Hagan, Neural network design, Martin Hagan, 2014.
+\end{thebibliography}
+
+\vspace{12pt}
 \end{document}
