@@ -5,8 +5,8 @@
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{graphicx}
 \usepackage{textcomp}
+\usepackage{soul}
 \usepackage{xcolor}
-
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{algorithm}
@@ -33,7 +33,7 @@ tkimbr1@students.towson.edu}
 \begin{abstract}
 	CAPTCHA is an acronym for the "Completely Automated Public Turing test
 	to tell Computers and Humans Apart". It is a mechanism which is used to
-	distinguish real human users from bots. CAPTCHAs come in a variety of forms,
+	deter bots from abusing software systems. CAPTCHAs come in a variety of forms,
 	including the deciphering of obfuscated text, transcribing of audio messages,
 	tracking mouse movement, and more. This research will focus on automating the
 	process of deciphering text-based CAPTCHAs using machine learning
@@ -78,8 +78,8 @@ website via API.
 	\label{figure}
 \end{figure}
 
-While this mechanism can mitigate the majority of software bots, it is not
-effective against bots utilizing machine learning technology. This research
+While this mechanism can mitigate the majority of software bots, it may pose
+trouble against bots utilizing machine learning technology. This research
 paper demonstrates that a machine learning agent is capable of solving CAPTCHAs
 with the use of open-source tools, supervised training, and convolutional
 neural networks. The goal of this research is show how adversaries can use
@@ -89,20 +89,20 @@ solving CAPTCHAs, results, challenges, future work, and concluding thoughts.
 
 \section{Background/Related Work}
 In this section, there will be a brief review of similar work which has been
-done on using machine learning to solve CAPTCHA tests.
+done with machine learning and CAPTCHAs.
 
 \subsection{Solving reCAPTCHAs With Reinforcement Learning}
-Researchers at [] have demonstrated the ability to solve mouse-based reCAPTCHAs using
+Researchers at \hl{[]} have demonstrated the ability to solve mouse-based reCAPTCHAs using
 reinforcement learning. Google's reCAPTCHA mechanism is more difficult to solve
 compared to traditional CAPTCHAs due to its usage of mouse-tracking to
 determine if the user is a human. While the exact algorithm is unknown due to
-the closed-source nature of the reCAPTCHA technology, the researchers uses a
+the closed-source nature of the reCAPTCHA technology, the researchers use a
 black-box approach to solve reCAPTCHAs.
 
 The approach models mouse movements as transitions on a 2-dimensional grid
 of pixels. The \emph{Markov Decision Process} is used to generate a series of
 movements (up, down, left, right), which is combination of random and controlled
-outcomes. The mouse-control agent is then trained through reinforcement
+outcomes. The mouse-controlled agent is then trained through reinforcement
 learning to generate a series of movements which mimic the behavior of humans.
 This methodology was able to achieve a success rate of 97.4\% on a 100x100
 grid and 96.7\% on a 1000x1000 display.
@@ -114,7 +114,7 @@ grid and 96.7\% on a 1000x1000 display.
 \end{figure}
 
 \subsection{Generic Solving of Text-based CAPTCHAs}
-Researchers at [] have provided a basic framework on solving CAPTCHAs using
+Researchers at \hl{[]} have provided a basic framework on solving CAPTCHAs using
 segmentation and character recognition techniques. More specifically, their
 technique is able to detect individual characters in CAPTCHAs with occluding
 lines. Traditional approaches to CAPTCHA-solving typically use two separate
@@ -131,7 +131,7 @@ learning to perform 3 steps: \emph{cut-point detection}, \emph{slicing}, and
 \emph{scoring}.
 Cut-point detection analyzes all combinations of character partitioning. The
 slicer will then segment each character using every partitioning combination,
-placing them on a graph afterwards. Finally, the scorer assigns a weight for
+placing them in a graph afterwards. Finally, the scorer assigns a weight for
 each partitioning combination and determines which characters are most likely
 present in the CAPTCHA.
 
@@ -144,17 +144,16 @@ present in the CAPTCHA.
 \subsection{Immutable Adversarial Examples for CAPTCHA Generation}
 While the two works above demonstrate the exploitation of CAPTCHAs, the work
 presented here will demonstrate an approach for securing CAPTCHAs. Researchers
-at [] have demonstrated the ability to produce CAPTCHAs which are resistant to
+at \hl{[]} have demonstrated the ability to produce CAPTCHAs which are resistant to
 noise-removal attempts. Often, CAPTCHA solving techniques using neural networks
-apply filters to a CAPTCHA image to reduce noise and exaggerate feature
-sets. Generating CAPTCHAs with immutable noise would pose a significant
+apply filters to a CAPTCHA image; reducing noise and exaggerating features. Generating CAPTCHAs with immutable noise would pose a significant
 challenge to many of the machine learning assisted CAPTCHA solvers.
 
 The researchers were able to create immutable adversarial CAPTCHAs by using a
 modification of the \emph{fast gradient sign} (FGS) method. The FGS method
 works by slightly altering the gradient values of certain image pixels to
-maximize \emph{loss} during the training process of a neural network. The
-modified FGS method takes target label and confidence level as inputs in
+maximize \emph{loss} (bad predictions) during the training process of a neural network. The
+modified FGS method takes a target label and confidence level as inputs in
 addition to the original image. This allows for noise generation to work
 towards a specific goal, distributing the noise in such a way that is
 difficult to filter.
@@ -189,19 +188,20 @@ CAPTCHA-solving model, \emph{convolutional neural networks (CNN's)} and
 image-processing, a perfect use-case for CAPTCHA-solving.
 
 CNN's are a subset of \emph{artificial neural networks (ANN's)}, a family of algorithms
-which mimic the structure of biological neural networks found in animal brains.
+which mimic the structure of biological neural networks found in animal brains
+\hl{[]}.
 ANN's consist of an input layer for data, one or more hidden layers for
 data-processing, and an output layer for decision-making. CNN's use
 a combination of \emph{convolutional layers} and \emph{pooling layers} to
 represent the hidden layers in its structure. Convolutional layers are used to
 create feature maps, a technique used to extract characteristics from image
-data. A pooling layer is placed after each convolutional layer to reduce the
+data \hl{[]}. A pooling layer is placed after each convolutional layer to reduce the
 size of each feature map, lowering the computation power required for
-further processing.
+further processing \hl{[]}.
 
 Supervised learning is a technique to train a machine learning model with
 the use of labelled data. The labels in the dataset define a category or
-feature for each data instance.
+feature for each data instance \hl{[]}.
 
 \begin{figure}[htbp]
 	\centerline{\includegraphics[scale=0.25]{images/cnn-example.png}}
@@ -212,7 +212,7 @@ feature for each data instance.
 
 \subsection{Creating the Training Data}
 Creating the training dataset consists of two parts; generating a large series
-of CAPTCHA images and creating labels for each CAPTCHA image. In order to
+of CAPTCHA images and creating labels for each one. In order to
 satisfy these two requirements, PIL will be used to generate CAPTCHA images
 with their labels. 
 

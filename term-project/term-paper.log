@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  28 APR 2021 23:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  30 APR 2021 23:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -210,6 +210,18 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
+(/usr/share/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks22
+\SOUL@lasttoken=\toks23
+\SOUL@cmds=\toks24
+\SOUL@buffer=\toks25
+\SOUL@token=\toks26
+\SOUL@spaceskip=\skip53
+\SOUL@ttwidth=\dimen173
+\SOUL@uldp=\dimen174
+\SOUL@ulht=\dimen175
+)
 (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
@@ -233,7 +245,7 @@ Package: babel 2020/10/27 3.51 The Babel package
 (/usr/share/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2020/10/27 3.51 Babel common definitions
 \babel@savecnt=\count270
-\U@D=\dimen173
+\U@D=\dimen176
 \l@babelnohyphens=\language86
 
 (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
@@ -252,8 +264,8 @@ Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 ))
 (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks22
-\inpenc@posthook=\toks23
+\inpenc@prehook=\toks27
+\inpenc@posthook=\toks28
 )
 (/usr/share/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
@@ -262,21 +274,21 @@ nment
 (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count272
-\float@exts=\toks24
+\float@exts=\toks29
 \float@box=\box51
-\@float@everytoks=\toks25
+\@float@everytoks=\toks30
 \@floatcapt=\box52
 )
 (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\@float@every@algorithm=\toks26
+\@float@every@algorithm=\toks31
 \c@algorithm=\count273
 )
 (/usr/share/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
 \c@AlgoLine=\count274
-\algocf@hangindent=\skip53
+\algocf@hangindent=\skip54
 
 
 ! LaTeX Error: File `ifoddpage.sty' not found.
@@ -295,36 +307,36 @@ Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: sty)
 
 Enter file name: 
-\skiptotal=\skip54
-\skiplinenumber=\skip55
-\skiprule=\skip56
-\skiphlne=\skip57
-\skiptext=\skip58
-\skiplength=\skip59
-\algomargin=\skip60
-\skipalgocfslide=\skip61
-\algowidth=\dimen174
-\inoutsize=\dimen175
-\inoutindent=\dimen176
-\interspacetitleruled=\dimen177
-\interspacealgoruled=\dimen178
-\interspacetitleboxruled=\dimen179
-\algocf@ruledwidth=\skip62
+\skiptotal=\skip55
+\skiplinenumber=\skip56
+\skiprule=\skip57
+\skiphlne=\skip58
+\skiptext=\skip59
+\skiplength=\skip60
+\algomargin=\skip61
+\skipalgocfslide=\skip62
+\algowidth=\dimen177
+\inoutsize=\dimen178
+\inoutindent=\dimen179
+\interspacetitleruled=\dimen180
+\interspacealgoruled=\dimen181
+\interspacetitleboxruled=\dimen182
+\algocf@ruledwidth=\skip63
 \algocf@inoutbox=\box53
 \algocf@inputbox=\box54
-\AlCapSkip=\skip63
-\AlCapHSkip=\skip64
-\algoskipindent=\skip65
+\AlCapSkip=\skip64
+\AlCapHSkip=\skip65
+\algoskipindent=\skip66
 \algocf@nlbox=\box55
 \algocf@hangingbox=\box56
 \algocf@untilbox=\box57
-\algocf@skipuntil=\skip66
+\algocf@skipuntil=\skip67
 \algocf@capbox=\box58
-\algocf@lcaptionbox=\skip67
-\algoheightruledefault=\skip68
-\algoheightrule=\skip69
-\algotitleheightruledefault=\skip70
-\algotitleheightrule=\skip71
+\algocf@lcaptionbox=\skip68
+\algoheightruledefault=\skip69
+\algoheightrule=\skip70
+\algotitleheightruledefault=\skip71
+\algotitleheightrule=\skip72
 \c@algocfline=\count275
 \c@algocfproc=\count276
 \c@algocf=\count277
@@ -340,13 +352,13 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@line=\count278
 \c@ALG@rem=\count279
 \c@ALG@nested=\count280
-\ALG@tlm=\skip72
-\ALG@thistlm=\skip73
+\ALG@tlm=\skip73
+\ALG@thistlm=\skip74
 \c@ALG@Lnr=\count281
 \c@ALG@blocknr=\count282
 \c@ALG@storecount=\count283
 \c@ALG@tmpcounter=\count284
-\ALG@tmplength=\skip74
+\ALG@tmplength=\skip75
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -405,16 +417,16 @@ LaTeX Font Info:    ... okay on input line 19.
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count286
-\scratchdimen=\dimen180
+\scratchdimen=\dimen183
 \scratchbox=\box62
 \nofMPsegments=\count287
 \nofMParguments=\count288
-\everyMPshowfont=\toks27
+\everyMPshowfont=\toks32
 \MPscratchCnt=\count289
-\MPscratchDim=\dimen181
+\MPscratchDim=\dimen184
 \MPnumerator=\count290
 \makeMPintoPDFobject=\count291
-\everyMPtoPDFconversion=\toks28
+\everyMPtoPDFconversion=\toks33
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
@@ -480,7 +492,7 @@ Package pdftex.def Info: images/grid-world.png  used on input line 111.
 (pdftex.def)             Requested size: 132.49467pt x 95.85788pt.
 
 Underfull \hbox (badness 1668) in paragraph at lines 117--124
-[]\OT1/ptm/m/n/11 Researchers at [] have pro-vided a ba-sic frame-
+[]\OT1/ptm/m/n/11 Researchers at [][] have pro-vided a ba-sic frame-
  []
 
 
@@ -501,7 +513,7 @@ Underfull \hbox (badness 1902) in paragraph at lines 144--144
 <images/fgsm_technique.png, id=15, 702.625pt x 279.0425pt>
 File: images/fgsm_technique.png Graphic file (type png)
 <use images/fgsm_technique.png>
-Package pdftex.def Info: images/fgsm_technique.png  used on input line 163.
+Package pdftex.def Info: images/fgsm_technique.png  used on input line 162.
 (pdftex.def)             Requested size: 245.92242pt x 97.66634pt.
 [2 <./images/grid-world.png> <./images/negative-kerning.png> <./images/fgsm_tec
 hnique.png>]
@@ -896,11 +908,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6571 strings out of 479383
- 98181 string characters out of 5875830
- 417645 words of memory out of 5000000
- 23573 multiletter control sequences out of 15000+600000
- 438928 words of font info for 92 fonts, out of 8000000 for 9000
+ 6744 strings out of 479383
+ 100334 string characters out of 5875830
+ 421307 words of memory out of 5000000
+ 23741 multiletter control sequences out of 15000+600000
+ 439241 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,10n,76p,325b,274s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
@@ -909,7 +921,7 @@ c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/
 urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on term-paper.pdf (7 pages, 1005320 bytes).
+Output written on term-paper.pdf (7 pages, 1005627 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
