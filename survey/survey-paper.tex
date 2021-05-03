@@ -277,16 +277,16 @@ engines, which are often available in two distinct types,
 \emph{signature-based} detection engines and \emph{anomaly-based} detection
 engines. A signature-based detection engine keeps a record of malicious
 behaviors and footprints, comparing software behaviors against the record to
-identify malware \hl{[]}. On the other hand, an anomaly-based engine will
+identify malware [13]. On the other hand, an anomaly-based engine will
 compare software behaviors against a record of 'normal' system behavior to
-detect deviations, classifying them as malicious actions \hl{[]}. Both approaches can be extended with machine learning
+detect deviations, classifying them as malicious actions [13]. Both approaches can be extended with machine learning
 capabilities to improve their detection rates. In particular, supervised
 learning has been shown to be an effective strategy.
 
 However, even with the advancements in malware detection schemes, research
 has shown that there can be a significant flaw associated with detection
 engines using static features and definitive labels. In particular, researchers
-at \hl{[]} created \emph{DQEAF}, a framework which has demonstrated the ability to evade malware-detection by
+at [13] created \emph{DQEAF}, a framework which has demonstrated the ability to evade malware-detection by
 the use of reinforcement learning. DQEAF operates by using a machine
 learning agent to interact with different malware samples. During its
 interaction, it will slightly modify the behaviors of detected malware samples
@@ -308,7 +308,7 @@ techniques used by adversaries. The techniques include the exploitation of
 weaknesses in the CAPTCHA generating mechanism
 and using machine learning for CAPTCHA solving. Machine learning
 CAPTCHA solving is an especially attractive option, given the automation
-capabilities. In fact, researchers at \hl{[]} suggested that reinforcement learning has
+capabilities. In fact, researchers at [14] suggested that reinforcement learning has
 provided the capability to solve one of Google's reCAPTCHA mechanisms, which
 records mouse movements to distinguish human and bot behavior. This was
 achievable by representing the pixels on a screen as a matrix, and using a
@@ -331,7 +331,7 @@ combination of characters to guess the resulting password.
 Due to the increasing awareness in cybersecurity best practices, many sites
 with accounts will employ mechanisms to enforce stronger passwords. As a
 result, simple password crackers are no longer able to make guesses 
-within a reasonable amount of time. However, researchers at \hl{[]} suggest that a
+within a reasonable amount of time. However, researchers at [15] suggest that a
 generative machine learning model is capable of creating more accurate guesses
 based on previously exposed password datasets. The approach uses the
 \emph{Markov Model} with a neural network to derive characteristics from a
@@ -353,7 +353,7 @@ Currently, the usage of \emph{Trusted Platform Modules} (TPMs) are seeing a
 rise in popularity for securing systems. TPM technology typically consists of a
 set of cryptographic algorithms along with a dedicated processor known as a TPM
 chip. The purpose of a TPM chip is to provide a dedicated hardware device to
-independently verify that a software system has not been tampered with \hl{[]}. 
+independently verify that a software system has not been tampered with. 
 
 An interesting research direction would be to incorporate TPMs into a machine
 learning system. In addition, there has been a recent surge in mobile devices
@@ -370,9 +370,9 @@ and \emph{discriminator}. Given an initial training data set, the goal is to
 produce new data which mimic the characteristics of the training set. This is
 accomplished by using the \emph{generator} to produce realistic fake data from
 a random seed, and the \emph{discriminator} which learns to differentiate the
-fake data and real data \hl{[]}. The two networks are in an adversarial relationship,
+fake data and real data [16]. The two networks are in an adversarial relationship,
 hence the name, and work toward minimizing the differences between the fake and
-real data \hl{[]}. This concept has brought significant insight into the inner-workings
+real data [16]. This concept has brought significant insight into the inner-workings
 of machine learning, along with insights on the relationships between data
 samples.
 
@@ -390,7 +390,7 @@ which can strengthen its detection mechanism.
 One of the biggest challenges in cybersecurity is finding a general software
 solution which can defend against new threats. Especially in the
 context of \emph{zero-day exploits}, which are cyberattacks that occur before a
-software vulnerability is well-known to the public \hl{[]}. Additionally, even known
+software vulnerability is well-known to the public. Additionally, even known
 malware samples may pass through a system undetected due to the nature of
 anti-malware systems.
 
@@ -424,8 +424,8 @@ important to consider how its ubiquity will affect the domain of cybersecurity.
         Tailored to Microarray Gene Expression Data Sets," in IEEE Transactions
         on Evolutionary Computation, vol. 18, no. 6, pp. 873-892, Dec. 2014,
         doi: 10.1109/TEVC.2013.2291813.
-    \bibitem{b4} H.  B.  Demuth,  M.  H.  Beale,  O.  De  Jess,  and  M.  T.
-        Hagan,Neural network design, Martin Hagan, 2014.
+    \bibitem{b4} H. B. Demuth, M. H. Beale, O. De Jess, and M. T.
+        Hagan, Neural network design, Martin Hagan, 2014.
     \bibitem{b5} W. Grant and W. Yu, “A Survey of Deep Learning: Platforms,
         Applications and Emerging Research Trends; A Survey of Deep Learning:
         Platforms, Applications and Emerging Research Trends,” 2018, doi:
@@ -452,6 +452,19 @@ important to consider how its ubiquity will affect the domain of cybersecurity.
         1-14. 10.1145/1644893.1644895. 
     \bibitem{b12} M. Abadi et al., “Deep Learning with Differential Privacy,”
         2016, doi: 10.1145/2976749.2978318.
+    \bibitem{b13} Z. Fang, J. Wang, B. Li, S. Wu, Y. Zhou and H. Huang,
+        "Evading Anti-Malware Engines With Deep Reinforcement Learning," in
+        IEEE Access, vol. 7, pp. 48867-48879, 2019, doi:
+        10.1109/ACCESS.2019.2908033.
+    \bibitem{b14} I. Akrout, A. Feriani, and M. Akrout,  “Hacking  Google
+        re-CAPTCHA v3 using Reinforcement Learning.”
+    \bibitem{b15} Hitaj, Briland & Gasti, Paolo & Ateniese, Giuseppe &
+        Perez-Cruz, Fernando. (2017). PassGAN: A Deep Learning Approach for
+        Password Guessing. 
+    \bibitem{b16} Goodfellow, Ian & Pouget-Abadie, Jean & Mirza, Mehdi & Xu,
+        Bing & Warde-Farley, David & Ozair, Sherjil & Courville, Aaron &
+        Bengio, Y.. (2014). Generative Adversarial Networks. Advances in Neural
+        Information Processing Systems. 3. 10.1145/3422622. 
 
 \end{thebibliography}
 \vspace{12pt}

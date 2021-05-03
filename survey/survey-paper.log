@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  3 MAY 2021 02:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  3 MAY 2021 02:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -338,6 +338,47 @@ Underfull \hbox (badness 1442) in paragraph at lines 448--453
 \OT1/ptm/m/n/9 (2009). AN-TI-DOTE: un-der-stand-ing and de-fend-ing against
  []
 
+! Misplaced alignment tab character &.
+l.461     \bibitem{b15} Hitaj, Briland &
+                                         Gasti, Paolo & Ateniese, Giuseppe &
+? 
+! Misplaced alignment tab character &.
+l.461 ...item{b15} Hitaj, Briland & Gasti, Paolo &
+                                                   Ateniese, Giuseppe &
+? 
+! Misplaced alignment tab character &.
+l.461 ...and & Gasti, Paolo & Ateniese, Giuseppe &
+                                                  
+? 
+! Misplaced alignment tab character &.
+l.464     \bibitem{b16} Goodfellow, Ian &
+                                          Pouget-Abadie, Jean & Mirza, Mehdi...
+
+? 
+! Misplaced alignment tab character &.
+l.464 ...} Goodfellow, Ian & Pouget-Abadie, Jean &
+                                                   Mirza, Mehdi & Xu,
+? 
+! Misplaced alignment tab character &.
+l.464 ...an & Pouget-Abadie, Jean & Mirza, Mehdi &
+                                                   Xu,
+? 
+! Misplaced alignment tab character &.
+l.465         Bing &
+                     Warde-Farley, David & Ozair, Sherjil & Courville, Aaron &
+? 
+! Misplaced alignment tab character &.
+l.465         Bing & Warde-Farley, David &
+                                           Ozair, Sherjil & Courville, Aaron &
+? 
+! Misplaced alignment tab character &.
+l.465 ... & Warde-Farley, David & Ozair, Sherjil &
+                                                   Courville, Aaron &
+? 
+! Misplaced alignment tab character &.
+l.465 ...vid & Ozair, Sherjil & Courville, Aaron &
+                                                  
+? 
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -353,10 +394,10 @@ Before submitting the final camera ready copy, remember to:
 
 ] (./survey-paper.aux) ) 
 Here is how much of TeX's memory you used:
- 3854 strings out of 479383
- 55199 string characters out of 5875830
- 350958 words of memory out of 5000000
- 20962 multiletter control sequences out of 15000+600000
+ 3858 strings out of 479383
+ 55219 string characters out of 5875830
+ 350974 words of memory out of 5000000
+ 20966 multiletter control sequences out of 15000+600000
  432081 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,8n,72p,235b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -364,7 +405,7 @@ Here is how much of TeX's memory you used:
 r/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/font
 s/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on survey-paper.pdf (6 pages, 78513 bytes).
+Output written on survey-paper.pdf (6 pages, 78868 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
