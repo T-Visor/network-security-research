@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  1 MAY 2021 02:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.21)  2 MAY 2021 22:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -397,9 +397,6 @@ LaTeX Warning: Label `figure' multiply defined.
 
 LaTeX Warning: Label `figure' multiply defined.
 
-
-LaTeX Warning: Label `figure' multiply defined.
-
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -514,22 +511,16 @@ Package pdftex.def Info: images/fgsm_technique.png  used on input line 162.
 (pdftex.def)             Requested size: 245.92242pt x 97.66634pt.
 [2 <./images/grid-world.png> <./images/negative-kerning.png> <./images/fgsm_tec
 hnique.png>]
-<images/cnn-example.png, id=21, 888.31876pt x 465.74pt>
-File: images/cnn-example.png Graphic file (type png)
-<use images/cnn-example.png>
-Package pdftex.def Info: images/cnn-example.png  used on input line 207.
-(pdftex.def)             Requested size: 222.07915pt x 116.43471pt.
-
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.229 		\State
+l.223 		\State
                $count \leftarrow 0 $
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.229 		\State
+l.223 		\State
                $count \leftarrow 0 $
 ? 
 
@@ -539,16 +530,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.229 		\State
+l.223 		\State
                $count \leftarrow 0 $
 ? 
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 229.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 229
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 223.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 223
 .
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 229
+LaTeX Font Info:    Trying to load font information for U+msb on input line 223
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -557,13 +548,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.230 		\State
+l.224 		\State
               
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.230 		\State
+l.224 		\State
               
 ? 
 
@@ -573,19 +564,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.230 		\State
+l.224 		\State
               
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 
@@ -595,19 +586,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 
@@ -617,19 +608,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 
@@ -639,23 +630,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 
-Overfull \hbox (15.15715pt too wide) in paragraph at lines 243--243
+Overfull \hbox (15.15715pt too wide) in paragraph at lines 237--237
 []$\OML/cmm/m/it/10.95 captcha \OMS/cmsy/m/n/10.95   []\OT1/cmr/m/n/10.95 (\OML
 /cmm/m/it/10.95 font; number\OT1/cmr/m/n/10.95 )$ 
  []
@@ -667,19 +658,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 
@@ -689,19 +680,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 
@@ -711,19 +702,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 
@@ -733,19 +724,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 
@@ -755,19 +746,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 
@@ -777,19 +768,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 
@@ -799,19 +790,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Extra \endcsname.
 \ALG@makenobeginrepeat ...LG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 
@@ -821,123 +812,108 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
 ! Missing number, treated as zero.
 <to be read again> 
                    \ALG@b@2@EndWhile@0 
-l.243 \end
+l.237 \end
           {algorithm}
 ? 
-<images/0058_image.png, id=22, 90.3375pt x 60.225pt>
+<images/0058_image.png, id=21, 90.3375pt x 60.225pt>
 File: images/0058_image.png Graphic file (type png)
 <use images/0058_image.png>
-Package pdftex.def Info: images/0058_image.png  used on input line 246.
+Package pdftex.def Info: images/0058_image.png  used on input line 240.
 (pdftex.def)             Requested size: 135.50589pt x 90.33725pt.
-[3 <./images/cnn-example.png> <./images/0058_image.png (PNG copy)>]
-Underfull \hbox (badness 1939) in paragraph at lines 261--267
+
+Underfull \hbox (badness 1939) in paragraph at lines 251--257
 \OT1/ptm/m/n/11 Jupyter Note-book en-vi-ron-ment, us-ing the di-rec-tory
  []
 
+[3 <./images/0058_image.png (PNG copy)>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 269.
+               Default added (so using `htbp') on input line 259.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.274   \Input{String $file\_path}
+l.264   \Input{String $file\_path}
                                   
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.275   \Output{String $label}
+l.265   \Output{String $label}
                               
 ? 
-<images/pandas-dataframe.png, id=29, 502.87875pt x 214.8025pt>
+<images/pandas-dataframe.png, id=28, 502.87875pt x 214.8025pt>
 File: images/pandas-dataframe.png Graphic file (type png)
 <use images/pandas-dataframe.png>
-Package pdftex.def Info: images/pandas-dataframe.png  used on input line 294.
+Package pdftex.def Info: images/pandas-dataframe.png  used on input line 284.
 (pdftex.def)             Requested size: 251.43875pt x 107.40099pt.
-<images/model-summary.png, id=30, 685.56125pt x 600.2425pt>
+<images/model-summary.png, id=29, 685.56125pt x 600.2425pt>
 File: images/model-summary.png Graphic file (type png)
 <use images/model-summary.png>
-Package pdftex.def Info: images/model-summary.png  used on input line 327.
+Package pdftex.def Info: images/model-summary.png  used on input line 317.
 (pdftex.def)             Requested size: 191.95584pt x 168.06674pt.
 [4 <./images/pandas-dataframe.png> <./images/model-summary.png>]
-<images/accuracy.png, id=34, 562.1pt x 321.2pt>
+<images/accuracy.png, id=33, 562.1pt x 321.2pt>
 File: images/accuracy.png Graphic file (type png)
 <use images/accuracy.png>
-Package pdftex.def Info: images/accuracy.png  used on input line 359.
+Package pdftex.def Info: images/accuracy.png  used on input line 349.
 (pdftex.def)             Requested size: 252.94266pt x 144.53867pt.
-<images/loss.png, id=35, 556.0775pt x 319.1925pt>
+<images/loss.png, id=34, 556.0775pt x 319.1925pt>
 File: images/loss.png Graphic file (type png)
 <use images/loss.png>
-Package pdftex.def Info: images/loss.png  used on input line 363.
+Package pdftex.def Info: images/loss.png  used on input line 353.
 (pdftex.def)             Requested size: 250.23256pt x 143.63528pt.
-<images/prediction-results.png, id=36, 623.32875pt x 674.52pt>
+<images/prediction-results.png, id=35, 623.32875pt x 674.52pt>
 File: images/prediction-results.png Graphic file (type png)
 <use images/prediction-results.png>
-Package pdftex.def Info: images/prediction-results.png  used on input line 392.
+Package pdftex.def Info: images/prediction-results.png  used on input line 382.
 
 (pdftex.def)             Requested size: 218.16832pt x 236.08554pt.
  [5 <./images/accuracy.png> <./images/loss.png> <./images/prediction-results.pn
 g>]
-Underfull \hbox (badness 3826) in paragraph at lines 428--433
+Underfull \hbox (badness 3826) in paragraph at lines 418--423
 []\OT1/ptm/m/n/11 One pos-si-ble so-lu-tion to solv-ing a va-ri-ety of
  []
 
-<images/picture-recaptcha.png, id=40, 399.4925pt x 578.16pt>
+<images/picture-recaptcha.png, id=39, 399.4925pt x 578.16pt>
 File: images/picture-recaptcha.png Graphic file (type png)
 <use images/picture-recaptcha.png>
-Package pdftex.def Info: images/picture-recaptcha.png  used on input line 452.
+Package pdftex.def Info: images/picture-recaptcha.png  used on input line 442.
 (pdftex.def)             Requested size: 139.82446pt x 202.35902pt.
+
+Underfull \hbox (badness 4254) in paragraph at lines 448--454
+\OT1/ptm/m/n/11 ing ma-chine learn-ing to as-sist with CAPTCHA-
+ []
+
 [6 <./images/picture-recaptcha.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 490--491
-[]\OT1/ptm/m/n/9 \How to Add a Word-Press CAPTCHA to
+Underfull \hbox (badness 10000) in paragraph at lines 478--480
+\OT1/ptm/m/n/9 [On-line]. Avail-able: https://themeisle.com/blog/wordpress-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--491
-\OT1/ptm/m/n/9 Cut Down on Spam." [On-line]. Avail-able:
- []
-
-
-Overfull \hbox (141.60278pt too wide) in paragraph at lines 490--491
-\OT1/ptm/m/n/9 https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.axYo 36f5d/w:auto/h:
-auto/q:98/https://s15165.pcdn.co/wp-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 493--496
+Underfull \hbox (badness 10000) in paragraph at lines 482--485
 []\OT1/ptm/m/n/9 "Adversarial at-tacks with FGSM (Fast Gra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--496
+Underfull \hbox (badness 10000) in paragraph at lines 482--485
 \OT1/ptm/m/n/9 di-ent Sign Method)" [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--496
+Underfull \hbox (badness 10000) in paragraph at lines 482--485
 \OT1/ptm/m/n/9 https://www.pyimagesearch.com/2021/03/01/adversarial-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 496--499
-[]\OT1/ptm/m/n/9 "A Com-pre-hen-sive Guide to Con-vo-lu-tional Neu-ral
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 496--499
-\OT1/ptm/m/n/9 Net-works | the ELI5 way" [On-line]. Avail-able:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 496--499
-\OT1/ptm/m/n/9 https://towardsdatascience.com/a-comprehensive-guide-to-
+Underfull \hbox (badness 7667) in paragraph at lines 485--487
+\OT1/ptm/m/n/9 [On-line]. Avail-able: https://github.com/JackonYang/captcha-
  []
 
 
@@ -959,10 +935,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6754 strings out of 479383
- 100517 string characters out of 5875830
+ 6748 strings out of 479383
+ 100373 string characters out of 5875830
  421317 words of memory out of 5000000
- 23750 multiletter control sequences out of 15000+600000
+ 23745 multiletter control sequences out of 15000+600000
  439241 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,10n,76p,323b,274s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -972,10 +948,10 @@ c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/
 urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on term-paper.pdf (7 pages, 1810735 bytes).
+Output written on term-paper.pdf (7 pages, 1564800 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

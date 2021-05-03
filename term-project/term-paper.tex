@@ -170,7 +170,8 @@ In this section, a proof-of-concept CAPTCHA-solving model is constructed using
 open-source tools and machine learning principles. The first two subsections
 will give background information on the tools/principles being applied. The
 rest of the subsections will walk through the procedure for creating the machine
-learning model.
+learning model. The work presented here uses a modification of a
+pre-existing CAPTCHA-solving framework provided by [9].
 
 \subsection{Open-source Tool Selection}
 \emph{Python 3} will be the programming language of choice, due to its
@@ -202,13 +203,6 @@ further processing [5].
 Supervised learning is a technique to train a machine learning model with
 the use of labelled data. The labels in the dataset define a category or
 feature for each data instance [4].
-
-\begin{figure}[htbp]
-	\centerline{\includegraphics[scale=0.25]{images/cnn-example.png}}
-    \caption{Example structure of convolutional neural network [9].}
-	\label{figure}
-\end{figure}
-
 
 \subsection{Creating the Training Data}
 Creating the training dataset consists of two parts; generating a large series
@@ -250,20 +244,16 @@ CAPTCHA images will be saved in the same directory for processing later on.
 
 The rest of the model-building procedure will take place in the \emph{Jupyter
 Notebook}
-file. \emph{TensorFlow} will need to be imported along with a helper library,
-\emph{pandas}. The pandas library contains many data structures which are
-commonly used with TensorFlow. The CAPTCHA images will need to be organized for
-TensorFlow to work with, this is where the pandas \emph{DataFrame} structure
-will be of use. The DataFrame is a tabular data
-structure with rows denoting iterations and columns representing data
-attributes.
+file. In addition to TensorFlow, the \emph{pandas} library will be imported.
+The pandas library contains the \emph{DataFrame}, a tabular data structure
+which will organize the training data.
 
 The CAPTCHA images will be imported into the Jupyter Notebook environment,
 using the directory where they were stored. A function will then
 be called repeatedly to parse each file path, obtaining the 4-digit string associated with each
 CAPTCHA image. The pandas DataFrame will then be used to store a pair of values
 for each row; the CAPTCHA image path and its 4-digit string. This
-associates the label with its respective data.
+associates the label with its respective data [9].
 
 
 \begin{algorithm}[]
@@ -309,14 +299,14 @@ red, green, and blue (RGB). This will reject anomalies presented to the machine
 learning model and enforce uniformity.
 
 The \emph{hidden layers} are responsible for extracting and interpreting the
-features in the image data. Through experimentation, 3
+features in the image data. 3
 convolutional layers accompanied by 3 pooling layers have been sufficient 
 for feature extraction. This set produces the optimal number of parameters (or
-filters) which are required to extract the digits from each CAPTCHA image.
+filters) which are required to extract the digits from each CAPTCHA image [9].
 Afterwards, a flattening layer will transform the multi-dimensional array
 representing each image into a single-dimension array for
 easier processing. 2 dense layers are used afterwards for learning the features
-which have been extracted from prior layers. 
+which have been extracted from prior layers [9]. 
 
 The final layer of the neural network is the \emph{output layer}, which is
 responsible for predicting which numbers are in a CAPTCHA image. In
@@ -353,7 +343,7 @@ There are two main properties to evaluate in a machine learning model, its
 properties share an inverse relationship; accuracy determining the model's
 correctness and loss representing errors in prediction [4]. Using an additional
 library, \emph{Matplotlib}, a graph representation of accuracy/loss can be
-produced for the model.
+produced for the model [9].
 
 \begin{figure}[htbp]
 	\centerline{\includegraphics[scale=0.45]{images/accuracy.png}}
@@ -382,7 +372,7 @@ the \emph{test dataset}. The test dataset consists of new CAPTCHA variations
 which the model has not been exposed to. The trained model will then
 take each CAPTCHA image from the test dataset as input, and return a
 4-digit prediction value. The \emph{Matplotlib} library will be used again to
-visually represent the model's interpretation of CAPTCHA images. Each graph
+visually represent the model's interpretation of CAPTCHA images [9]. Each graph
 instance will contain the model's prediction value, CAPTCHA image, and true
 value (label for CAPTCHA image). An example of the model's performance is
 demonstrated on 9 new CAPTCHA images, where it was able to accurately guess the
@@ -456,9 +446,7 @@ research, the use of reinforcement learning may provide a feasible solution.
 
 \section{Conclusion}
 This research presents a proof-of-concept for using machine learning to assist
-with CAPTCHA-solving automation. Two novel algorithms were
-introduced for generating labelled CAPTCHAs and producing the corresponding
-labels for the training dataset. Assuming domain knowledge on the CAPTCHAs
+with CAPTCHA-solving automation. Assuming domain knowledge on the CAPTCHAs
 being solved, this work presents a simple mechanism for generating numerical variations of fixed-digit CAPTCHAs. Therefore, batches of
 CAPTCHA images selected during training are representative samples. After 10
 iterations of training, the resulting machine learning model had a quoted
@@ -487,15 +475,15 @@ in current software systems.
         10.1109/TIFS.2017.2718479.
     \bibitem{b4} E. Alpaydin, Introduction to machine learning, MIT press, 2014.
     \bibitem{b5} H. B. Demuth, M. H. Beale, O. De Jess, and M. T. Hagan, Neural network design, Martin Hagan, 2014.
-    \bibitem{b6} “How to Add a WordPress CAPTCHA to Cut Down on Spam.” [Online]. Available: https://mllj2j8xvfl0.i.optimole.com/Lsv2lkg.axYo~36f5d/w:auto/h:auto/q:98/https://s15165.pcdn.co/wp-content/uploads/2018/03/regular-captcha.jpg.
+    \bibitem{b6} “How to Add a WordPress CAPTCHA to Cut Down on Spam.”
+        [Online]. Available: https://themeisle.com/blog/wordpress-captcha/
     \bibitem{b7} "The Art of Kerning Typography: 10 Tips for Kerning Like a
         Pro" [Online]. Available: https://blog.creatopy.com/kerning-typography/
     \bibitem{b8} "Adversarial attacks with FGSM (Fast Gradient Sign Method)"
         [Online]. Available:
         https://www.pyimagesearch.com/2021/03/01/adversarial-attacks-with-fgsm-fast-gradient-sign-method/
-    \bibitem{b9} "A Comprehensive Guide to Convolutional Neural Networks — the
-        ELI5 way" [Online]. Available:
-        https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53
+    \bibitem{b9} J. Yang, "Captcha Solving Using TensorFlow",
+        version 1.0, [Online]. Available: https://github.com/JackonYang/captcha-tensorflow
     \bibitem{b10} "How to Choose a CAPTCHA in WPForms" [Online]. Available:
         https://wpforms.com/docs/setup-captcha-wpforms/
     \end{thebibliography}
