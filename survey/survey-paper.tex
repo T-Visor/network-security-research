@@ -1,12 +1,13 @@
 \documentclass[11pt,conference]{IEEEtran}
 \IEEEoverridecommandlockouts
-% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{graphicx}
-\usepackage{textcomp} \usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{soul}
+\usepackage{xcolor}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
-    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
 \title{Machine Learning Security Survey \\
@@ -22,20 +23,20 @@ tkimbr1@students.towson.edu}
 \maketitle
 
 \begin{abstract}
-Machine learning has experienced a significant growth in usage 
-over the past few decades. Due to its data-centric approach in modeling, 
-machine learning has seen use in a variety of subfields in computer science. In
-particular, researchers have been interested in incorporating machine learning
-into the domain of cybersecurity, utilizing it from the perspective of an
-adversary or ally. Researchers have also been concerned with the security state
-of current machine learning models. This survey paper provides an overview of
-machine learning, attacks and mitigations to current machine learning
+    Machine learning has experienced a significant growth in usage 
+    over the past few decades. Due to its data-centric approach in modeling, 
+    machine learning has seen use in a variety of subfields in computer science. In
+    particular, researchers have been interested in incorporating machine learning
+    into the domain of cybersecurity, utilizing it from the perspective of an
+    adversary or ally. Researchers have also been concerned with the security state
+    of current machine learning models. This survey paper provides an overview of
+    machine learning, attacks and mitigations to current machine learning
     systems, machine learning use cases for adversaries, and future research
     directions.
 \end{abstract}
 
 \begin{IEEEkeywords}
-Neural networks, security, classification, machine learning model, training,
+    Neural networks, security, classification, machine learning model, training,
     validation
 \end{IEEEkeywords}
 
@@ -44,15 +45,15 @@ With the increasing widespread adoption of machine learning technology, its
 usage is being observed in a variety of different fields. Some notable examples
 include image recognition, voice assistant technologies, email spam filters, and search
 engines. Much of its recent popularity can be attributed to the availability of
-frameworks such as tensorflow, allowing people of almost any background to
-quickly draft a machine learning application.
+frameworks such as TensorFlow, a python-based library which provides
+easy-to-use bindings for complex operations.
 
 However, one growing concern tied to the ubiquity of machine learning is its 
 accessibility to adversaries. Based on the assessment of current and prior
 research, there are a number of vulnerabilities in current machine learning
 models which can be exploited with little knowledge of a system's domain. In
 addition, attackers have been able to leverage machine learning technology to
-assist the deployment of cyberattacks. Enterprise machine learning applications
+assist with the deployment of cyberattacks. Enterprise machine learning applications
 may often contain large datasets of important information, becoming a potential 
 candidate of a targeted attack. This paper will survey the domain of
 cybersecurity with regard to machine learning. This topic will explore the
@@ -76,45 +77,49 @@ example is image classification, where the logic needed to compare images
 is complex. This becomes a bigger concern when new classifications need to be
 derived with new data. Machine learning flips the traditional programming
 paradigm on its head, by taking a series of solutions as input, and
-letting the machine develop the rules by detecting patterns in the solutions.
+letting the machine develop the rules by detecting patterns in the solutions
+\hl{[]}.
 The result is a self-propagating mathematical model, capable of making
 decisions on newly supplied data. This is what is known as a \emph{machine
 learning model}, a software component which can be saved to a file and
-integrated into larger software systems.
+integrated into larger software systems \hl{[]}.
 
 Machine learning models can be implemented using a number of different
 algorithms, some popular examples will be discussed in this paragraph. \emph{Regression algorithms} use statistics to model the
-relationships between different variables plotted on a graph. \emph{Decision
+relationships between different variables plotted on a graph \hl{[]}. \emph{Decision
 tree algorithms} represent the problems using trees, where internal nodes represent conditional statements and leaf nodes
-represent decisions. Lastly, \emph{artificial neural networks} are used in a
+represent decisions \hl{[]}. Lastly, \emph{artificial neural networks} are used in a
 subset of machine learning known as \emph{deep learning}, where the algorithms
 are modeled to mimic the structure of biological neural networks found in
-animal brains.  
+animal brains \hl{[]}.  
 
 Briefly mentioned earlier, a common use case for machine learning is
 \emph{classification}, where a dataset is categorized into different groups
 based on one or more \emph{features}. A \emph{feature} is defined as some
-measurable property or characteristic being observed in a dataset. There are several types of
+measurable property or characteristic being observed in a dataset \hl{[]}. There are several types of
 classifications, including \emph{binary classification}, \emph{multi-class
 classification}, and \emph{multi-label classification}. \emph{Binary
 classification} categorizes data based on whether a feature is present or not,
-resulting in an outcome of true or false. \emph{Multi-class classification}
+resulting in an outcome of true or false \hl{[]}. \emph{Multi-class classification}
 categorizes data into different groups, where each data instance is assigned
-according to its feature. \emph{Multi-label classification} categorizes data
+according to a single feature \hl{[]}. \emph{Multi-label classification} categorizes data
 into different groups, where each data instance is assigned according to its
-expression of on or more features.
+expression of two or more features \hl{[]}.
+\emph{Learning} is the procedure for training algorithms to detect patterns in
+data. 
 
-\emph{Training} is the process of teaching a machine learning model to detect patterns
-in datasets. There are two types of training mechanisms, \emph{supervised
-training} and \emph{unsupervised training}. \emph{Supervised training} requires
+There are three main types of training mechanisms, \emph{supervised
+training}, \emph{unsupervised training}, and \emph{reinforcement learning}. \emph{Supervised training} requires
 each data instance to have one or more labels, defining which category or
-feature it expresses. In contrast, \emph{unsupervised training} omits the need
-for labels, and the machine learning model will categorize datasets on its own.
+feature it expresses \hl{[]}. In contrast, \emph{unsupervised training} omits the need
+for labels, and the machine learning model will categorize datasets on its own
+\hl{[]}.
+\emph{Reinforcement learning} uses a reward-based system to maximize good
+decisions when a software agent performs a task \hl{[]}.
 Typically, after the training phase, a machine learning model will go through
-the process of \emph{validation}. \emph{Validation} typically consists of
-classifying a separate dataset to guarantee the accuracy of a model and
+the process of \emph{validation}. \emph{Validation} typically consists of a separate dataset to guarantee the accuracy of a model and
 preventing a phenomenon called \emph{over-fitting}, where a model will only
-'memorize' characteristics or patterns of training data.
+'memorize' characteristics or patterns of training data \hl{[]}.
 
 \section{Attacks to Machine Learning Models}
 Due to the unique mechanism for constructing machine learning models, there are
@@ -126,7 +131,7 @@ systems.
 
 \subsection{Data Poisoning}
 Data Poisoning is the act of manipulating, removing, or adding
-data during the training phase of machine learning. This type of attack is
+data during the training phase of machine learning \hl{[]}. This type of attack is
 known as a \emph{black box attack}, where an attacker does not need to know the
 implementation of a system to attack it.
 
@@ -134,31 +139,33 @@ One popular instance of a data poisoning attack is the adversarial
 example. This requires the attacker to have some knowledge of the
 training data, such as its dimensions and data type. The attacker would then
 manipulate data instances in a way where the machine learning model would
-be fooled, but appears normal to a human observer. The reason for manipulating
+be fooled, but appears normal to a human observer \hl{[]}. The reason for manipulating
 data instances in this way is two-fold. First, machine learning models are
 often constrained to data fitting a specific dimension, shape, size, or length
 of characters. This is typically done to prevent incompatible data from
 entering the model during training. Second, there is often one or more people
 who are observing the model with testing or validation datasets. An attacker
-would want to minimize any evidence of the data being tampered with.
+would want to minimize any evidence of the data being tampered with \hl{[]}.
 
 Often, the goal of this
 attack is to make a machine learning model incorrectly classify data. The
-consequences of this attack can be devastating. Examples include tricking an
-autonomous vehicle to misinterpret traffic signs, sneaking malicious data past an
-intrusion detection system, or bypassing email spam filters.
+consequences of this attack can be devastating. 
+%Examples include tricking an
+%autonomous vehicle to misinterpret traffic signs, sneaking malicious data past an
+%intrusion detection system, or bypassing email spam filters.
+\hl{PUT AN EXAMPLE FROM A RESEARCH PAPER HERE}
 
 \subsection{Membership Inference}
 Membership inference is a mechanism of data extraction, where an attacker 
 intends to know whether certain samples were used as training data for a
-machine learning model. This type of attack is also classified as a \emph{black box attack}.
+machine learning model \hl{[]}. This type of attack is also classified as a \emph{black box attack}.
 
 This particular attack requires significant effort from the attacker.
 The attacker would need access to a dataset of sufficient size mimicking the
 data in the target model. The data would then be used to create several
 \emph{shadow models}, which are used only to recognize differences
-in the target model's behavior. This is done to expose \emph{overfitting}, when a model's analysis corresponds too
-closely to its training data. Therefore, an attacker can interpret whether
+in the target model's behavior \hl{[]}. This is done to expose \emph{overfitting}, when a model's analysis corresponds too
+closely to its training data \hl{[]}. Therefore, an attacker can interpret whether
 certain samples were used in the training dataset based on the target model's
 confidence level in classifications.
 
@@ -166,10 +173,12 @@ Often, this can exploit the confidentiality of information on a system. An
 attacker has the capability to correlate information between datasets to target
 individuals for other cyberattacks.
 
+\hl{PUT AN EXAMPLE FROM A RESEARCH PAPER HERE}
+
 \subsection{Transfer Learning}
 Transfer learning is a mechanism where an attacker has the ability to study a
 publicly available machine learning model, and use that insight to sneak past
-and/or corrupt similar target systems. This type of attack is classified as a
+and/or corrupt similar target systems \hl{[]}. This type of attack is classified as a
 \emph{white box attack}, since the attacker would need to have full access to
 at least one machine learning model.
 
@@ -177,12 +186,14 @@ This particular attack requires knowledge of the
 input data, learning mechanism, and output behavior of a machine learning model
 similar to the target. Once this information is obtained, the attacker would
 test the system and learn its overall behavior to enumerate flaws in the
-model's logic. The assumption is that the flaws found in the available model's
+model's logic \hl{[]}. The assumption is that the flaws found in the available model's
 logic would appear in a target system.
 
 Often, the goal of this attack is similar to the other two mentioned above. An
 attacker would use the information to trick, fool, manipulate, or sneak passed
 a target machine learning model.
+
+\hl{PUT AN EXAMPLE FROM A RESEARCH PAPER HERE}
 
 \section{Mitigations to Attacks}
 
@@ -197,7 +208,7 @@ the input to the model, training the model, verifying the model accuracy,
 deployment, and maintenance.
 
 \subsection{Sanitizing Input}
-The next step in securing a machine learning system is to use mechanisms which
+One mechanism for securing a machine learning system is to 
 filter malicious samples from clean samples during the training phase. There
 are several different approaches to sanitizing depending on the type of data
 being fed to the model. A general procedure for sanitizing input data is still
@@ -208,9 +219,11 @@ This simple technique will manipulate each input sample to create a sharper
 decision boundary for the machine learning model to work on. A common
 implementation of this technique for images is \emph{binary thresholding},
 where each pixel in an image is converted to black or white depending on its
-color value. This technique will mitigate against perturbations to data.
+color value. This technique will mitigate against perturbations to data
+\hl{[Possible use research paper here]}.
 
-Another approach called ANTIDOTE, proposed by Rubinstein \emph{et al}, uses an \emph{anomaly-based}
+Another approach called ANTIDOTE, proposed by \hl{[]} uses an \emph{anomaly-based}
+%Rubinstein \emph{et al} uses an \emph{anomaly-based}
 detection scheme to characterize data samples. ANTIDOTE uses statistics to
 differentiate between normal and malicious samples. Once a malicious sample is
 detected, it is automatically discarded from the model.
@@ -228,10 +241,11 @@ A specialized approach to retraining using samples of malicious data is a techni
 a sufficient number of malicious samples with perturbations, along with the
 original training data. The technique
 involves labelling malicious data with perturbations as adversarial samples, and training
-the model to detect them appropriately. This ensures that adversarial samples will not affect
+the model to detect them appropriately \hl{[]}. This ensures that adversarial samples will not affect
 the overall accuracy of the model, by learning to filter perturbations added to
-any new data. The model will learn to differentiate between legitimate and
+any new data \hl{[]}. The model will learn to differentiate between legitimate and
 adversarial data when re-deployed.
+\hl{ADD RESEARCH HERE}
 
 \subsection{Differential Privacy}
 During deployment, data will typically be flowing in and out of a machine
@@ -240,7 +254,7 @@ systems will typically incorporate APIs to interface with it. Even if a system
 is robust, a data leak will completely compromise confidentiality. To
 circumvent this issue, \emph{differential privacy} is a mechanism to
 effectively store
-information while hiding confidential details.
+information while hiding confidential details \hl{[]}.
 
 The implementation of differential privacy will differ depending on the data
 being processed. A standard mechanism for differential privacy is to present
@@ -248,6 +262,7 @@ output data showing non-sensitive information normally, while sensitive
 information is encrypted. Another mechanism is presenting the output
 information of a machine learning model as a reference to another dataset, which
 will then need to be queried with subsequent processing.
+\hl{ADD RESEARCH HERE}
 
 \section{Assisting Cyberattacks with Machine Learning}
 After discussing the attacks/mitigations for machine learning systems
@@ -262,16 +277,16 @@ engines, which are often available in two distinct types,
 \emph{signature-based} detection engines and \emph{anomaly-based} detection
 engines. A signature-based detection engine keeps a record of malicious
 behaviors and footprints, comparing software behaviors against the record to
-identify malware. On the other hand, an anomaly-based engine will
+identify malware \hl{[]}. On the other hand, an anomaly-based engine will
 compare software behaviors against a record of 'normal' system behavior to
-detect deviations, classifying them as malicious actions. Both approaches can be extended with machine learning
+detect deviations, classifying them as malicious actions \hl{[]}. Both approaches can be extended with machine learning
 capabilities to improve their detection rates. In particular, supervised
 learning has been shown to be an effective strategy.
 
 However, even with the advancements in malware detection schemes, research
 has shown that there can be a significant flaw associated with detection
-engines using static features and definitive labels. In particular, a framework
-named \emph{DQEAF} has demonstrated the ability to evade malware-detection by
+engines using static features and definitive labels. In particular, researchers
+at \hl{[]} created \emph{DQEAF}, a framework which has demonstrated the ability to evade malware-detection by
 the use of reinforcement learning. DQEAF operates by using a machine
 learning agent to interact with different malware samples. During its
 interaction, it will slightly modify the behaviors of detected malware samples
@@ -293,7 +308,7 @@ techniques used by adversaries. The techniques include the exploitation of
 weaknesses in the CAPTCHA generating mechanism
 and using machine learning for CAPTCHA solving. Machine learning
 CAPTCHA solving is an especially attractive option, given the automation
-capabilities. In fact, research has suggested that reinforcement learning has
+capabilities. In fact, researchers at \hl{[]} suggested that reinforcement learning has
 provided the capability to solve one of Google's reCAPTCHA mechanisms, which
 records mouse movements to distinguish human and bot behavior. This was
 achievable by representing the pixels on a screen as a matrix, and using a
@@ -316,7 +331,7 @@ combination of characters to guess the resulting password.
 Due to the increasing awareness in cybersecurity best practices, many sites
 with accounts will employ mechanisms to enforce stronger passwords. As a
 result, simple password crackers are no longer able to make guesses 
-within a reasonable amount of time. However, research suggests that a
+within a reasonable amount of time. However, researchers at \hl{[]} suggest that a
 generative machine learning model is capable of creating more accurate guesses
 based on previously exposed password datasets. The approach uses the
 \emph{Markov Model} with a neural network to derive characteristics from a
@@ -338,7 +353,7 @@ Currently, the usage of \emph{Trusted Platform Modules} (TPMs) are seeing a
 rise in popularity for securing systems. TPM technology typically consists of a
 set of cryptographic algorithms along with a dedicated processor known as a TPM
 chip. The purpose of a TPM chip is to provide a dedicated hardware device to
-independently verify that a software system has not been tampered with. 
+independently verify that a software system has not been tampered with \hl{[]}. 
 
 An interesting research direction would be to incorporate TPMs into a machine
 learning system. In addition, there has been a recent surge in mobile devices
@@ -355,10 +370,10 @@ and \emph{discriminator}. Given an initial training data set, the goal is to
 produce new data which mimic the characteristics of the training set. This is
 accomplished by using the \emph{generator} to produce realistic fake data from
 a random seed, and the \emph{discriminator} which learns to differentiate the
-fake data and real data. The two networks are in an adversarial relationship,
+fake data and real data \hl{[]}. The two networks are in an adversarial relationship,
 hence the name, and work toward minimizing the differences between the fake and
-real data. This concept has brought significant insight into the inner-workings
-of machine learning along with insights on the relationships between data
+real data \hl{[]}. This concept has brought significant insight into the inner-workings
+of machine learning, along with insights on the relationships between data
 samples.
 
 An interesting research direction would be to use Generative Adversarial
@@ -375,17 +390,16 @@ which can strengthen its detection mechanism.
 One of the biggest challenges in cybersecurity is finding a general software
 solution which can defend against new threats. Especially in the
 context of \emph{zero-day exploits}, which are cyberattacks that occur before a
-software vulnerability is well-known to the public. Additionally, even known
+software vulnerability is well-known to the public \hl{[]}. Additionally, even known
 malware samples may pass through a system undetected due to the nature of
 anti-malware systems.
 
 An interesting research direction would be to incorporate a general framework
 for securing a software system through the use of reinforcement learning. This
 type of learning would be ideal in a live software environment due to the
-infinite number of possibilities for which it can be attacked. Specifically, it
+near-infinite number of possibilities for which it can be attacked. Specifically, it
 would act more as an aid to patching software vulnerabilities, suggesting where
-software vulnerabilities could occur in a system based on prior vulnerability
-assessments.
+they could occur based on internet data and assessments.
 
 \section{Conclusion}
 In this paper, the topic of machine learning security from different
@@ -399,13 +413,13 @@ important to consider how its ubiquity will affect the domain of cybersecurity.
 
 
 \begin{thebibliography}{00}
-\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
-\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
-\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
-\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
-\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+    \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
+    \bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
+    \bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
+    \bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
+    \bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
+    \bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
+    \bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
 \end{thebibliography}
 \vspace{12pt}
 \color{red}
