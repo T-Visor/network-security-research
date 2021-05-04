@@ -254,16 +254,18 @@ the model to detect them appropriately [10]. This ensures that adversarial sampl
 the overall accuracy of the model, by learning to filter perturbations added to
 any new data [10]. The model will learn to differentiate between legitimate and
 adversarial data when re-deployed.
-\hl{ADD RESEARCH HERE}
+
+Another area of interest for model retraining is the use of automation. In
+particular, researchers at \hl{[]} \hl{FINISH THIS}
 
 \subsection{Differential Privacy}
 During deployment, data will typically be flowing in and out of a machine
-learning model. Information coming in and out of a machine learning model may be sensitive, so
-systems will typically incorporate APIs to interface with it. Even if a system
+learning model. Since information associated with a machine learning system may be
+sensitive, systems will typically incorporate an access control mechanism to interface with it. Even if a system
 is robust, a data leak will completely compromise confidentiality. To
 circumvent this issue, \emph{differential privacy} is a mechanism to
 effectively store
-information while hiding confidential details [12].
+information from a dataset while hiding confidential details [12].
 
 The implementation of differential privacy will differ depending on the data
 being processed. A standard mechanism for differential privacy is to present
