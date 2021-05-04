@@ -160,27 +160,22 @@ applied to images originating from a smartphone camera.
 \subsection{Membership Inference}
 Membership inference is a mechanism of data extraction, where an attacker 
 intends to know whether certain samples were used as training data for a
-machine learning model [7]. This type of attack is also classified as a \emph{black box attack}.
+machine learning model [7]. This type of attack is classified as a \emph{gray
+box attack}, where the attacker has some knowledge of the software system.
 
-This particular attack requires significant effort from the attacker.
-The attacker would need access to a dataset of sufficient size mimicking the
-data in the target model. The data would then be used to create several
-\emph{shadow models}, which are used only to recognize differences
-in the target model's behavior [7]. This is done to expose \emph{over-fitting}, when a model's analysis corresponds too
-closely to its training data [7]. Therefore, an attacker can interpret whether
-certain samples were used in the training dataset based on the target model's
-confidence level in classifications.
+Researchers at [18] evaluated publicly available models to detect the
+presence of data characteristics in hypothetical datasets. The researchers
+built several 'shadow' models using parameters that closely resembled the target
+machine learning model. The shadow models would take the output prediction of
+the target model as inputs, and distinguish the characteristics between how the
+target evaluated training data and new data. As a result, the shadow models
+were able to detect when the target exhibited over-fitting, indicating a data
+member was part of the training set.
 
 Often, this can exploit the confidentiality of information on a system. An
 attacker has the capability to correlate information between datasets to target
 individuals for other cyberattacks.
 
-Researchers at \hl{[]} evaluated publicly available models to detect the
-presence of data characteristics in realistic hypothetical datasets. The researchers
-built several 'shadow' models using parameters that closely resembled target
-machine learning models. Then the shadow models would take the output prediction of
-the target model as inputs, and distinguish the characteristics between how the
-target evaluated training data and new data. As a result... \hl{FINISH LATER} 
 
 \subsection{Transfer Learning}
 Transfer learning is a mechanism where an attacker has the ability to study a
@@ -473,6 +468,9 @@ important to consider how its ubiquity will affect the domain of cybersecurity.
         Information Processing Systems. 3. 10.1145/3422622. 
     \bibitem{b17} A. Kurakin, I. Goodfellow, S. Bengio, "Adversarial examples
         in the physical world," 2016
+    \bibitem{b18} R. Shokri, M. Stronati, C. Song and V. Shmatikov, "Membership
+        Inference Attacks Against Machine Learning Models," 2017 IEEE Symposium
+        on Security and Privacy (SP), 2017, pp. 3-18, doi: 10.1109/SP.2017.41.
 
 \end{thebibliography}
 \vspace{12pt}
